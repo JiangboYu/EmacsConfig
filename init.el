@@ -16,10 +16,16 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 ;;
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;(add-to-list 'custom-theme-load-path "~/.emacs.d/moe-theme.el/")
-					;(add-to-list 'load-path "~/.emacs.d/moe-theme.el/")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized")
+(load-theme 'solarized t)
+(set-frame-parameter nil 'background-mode 'light)
+;(set-frame-parameter nil 'background-mode 'dark)
+
+(enable-theme 'solarized)
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/moe-theme.el/")
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-(load-theme 'hickey t)
+;;(load-theme 'hickey t)
 (require 'tramp)
 (setq tramp-default-method "ssh")
 ;(load-theme 'solarized-dark t)
@@ -94,11 +100,11 @@
 ;;(add-hook 'c-mode-hook 'my:flymake-google-init)
 ;;(add-hook 'c++-mode-hook 'my:flymake-google-init)
 
-(require 'google-c-style)
-(add-hook 'c-mode-common-hook 'google-set-c-style)
-(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+;(require 'google-c-style)
+;(add-hook 'c-mode-common-hook 'google-set-c-style)
+;;(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
-(semantic-mode 1)
+;(semantic-mode 1)
 (defun my:add-semantic-to-autocomplete()
   (add-to-list 'ac-sources 'ac-source-semantic)
   )
@@ -116,18 +122,18 @@
 ;;(define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
 ;; turn on save place so that when opening a file, the cursor will be at the last position.
 ;; Semantic
-(global-semantic-idle-completions-mode t)
-(global-semantic-decoration-mode t)
-(global-semantic-highlight-func-mode t)
-(global-semantic-show-unmatched-syntax-mode t)
+;(global-semantic-idle-completions-mode t)
+;(global-semantic-decoration-mode t)
+;(global-semantic-highlight-func-mode t)
+;(global-semantic-show-unmatched-syntax-mode t)
 
 ;; CC-mode
 
-(add-hook 'c-mode-hook '(lambda ()
-        (setq ac-sources (append '(ac-source-semantic) ac-sources))
-        (local-set-key (kbd "RET") 'newline-and-indent)
-        (linum-mode t)
-        (semantic-mode t)))
+;; (add-hook 'c-mode-hook '(lambda ()
+;;         (setq ac-sources (append '(ac-source-semantic) ac-sources))
+;;         (local-set-key (kbd "RET") 'newline-and-indent)
+;;         (linum-mode t)
+;;         (semantic-mode t)))
 ;(global-linum-mode 1)
 (require 'saveplace)
 (setq-default save-place t)
