@@ -1,0 +1,68 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables
+  (list
+    (semanticdb-table "plt.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [647 666])
+            ("string.h" include (:system-flag t) nil [667 686])
+            ("stdio.h" include (:system-flag t) nil [687 705])
+            ("math.h" include (:system-flag t) nil [706 723])
+            ("misc.h" include nil nil [725 742])
+            ("log.h" include nil nil [743 759])
+            ("quantities.h" include nil nil [760 783])
+            ("program_type" variable
+               (:default-value "PLT"
+                :type ("" type
+                     (:members 
+                        ( ("PLT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1110 1114])
+                          ("TBL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1115 1119])
+                          ("HIST" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1120 1126]))                        
+                      :type "enum")
+                      nil nil))
+                nil [1103 1146])
+            ("usage" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1280 1285]))                  
+                :type "void")
+                nil [1269 1392])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1428 1437])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1440 1453]))                  
+                :type "void")
+                nil [1416 5325]))          
+      :file "plt.c"
+      :pointmax 5326
+      :fsize 5325
+      :lastmodtime '(13756 52741 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "misc.h"
+      :file "misc.h"
+      :fsize 1091
+      :lastmodtime '(13129 36161 0 0))
+    (semanticdb-table "log.h"
+      :file "log.h"
+      :fsize 3100
+      :lastmodtime '(13030 31181 0 0))
+    (semanticdb-table "quantities.h"
+      :file "quantities.h"
+      :fsize 4325
+      :lastmodtime '(13030 31184 0 0)))
+  :file "!Users!alfred!Documents!repo!fbm.1998-09-01!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

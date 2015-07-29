@@ -1,0 +1,29 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "test.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("mpi.h" include nil nil [1 17])
+            ("stdio.h" include (:system-flag t) nil [18 36])
+            ("stdlib.h" include (:system-flag t) nil [37 56])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [66 75])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76 90]))                  
+                :type "int")
+                nil [57 835]))          
+      :file "test.cc"
+      :pointmax 836
+      :fsize 835
+      :lastmodtime '(21835 25070 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!alfred!Downloads!mpi_demo!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

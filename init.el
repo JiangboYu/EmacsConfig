@@ -1,15 +1,50 @@
 ;;; Jiangbo Yu yjb7049@gmail.com
 ;;;
 
-;(setq sml/shorten-directory t)
-;(setq sml/shorten-modes t)
-;(setq sml/name-width 40)
-;(setq sml/mode-width 20)
+;;(setq sml/shorten-directory t)
+;;(setq sml/shorten-modes t)
+;;(setq sml/name-width 40)
+;;(setq sml/mode-width 20)
+(setq path-to-ctags "/usr/bin/ctags")
+(defun create-tags (dir-name)
+    "Create tags file."
+    (interactive "DDirectory: ")
+    (shell-command
+     (format "ctags -f %s -e -R %s" path-to-ctags (directory-file-name dir-name)))
+  )
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.org/packages/")))
 
 (package-initialize)
+(require 'ido)
+(ido-mode t)
+(ido-everywhere 1)
+(setq ido-enable-flex-matching t)
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-X") 'smex)
+(global-set-key (kbd "C-c M-x") 'smex-update)
+(require 'env-var-import)
+(env-var-import)
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+;;;setting for go lang
+(defun go-mode-setup()
+  (setq compile-command "go build -v && go test -v && go vet && hello")
+  (custom-set-variables
+   '(go-command "/usr/local/go/bin/go"))
+  (define-key (current-local-map) "C-c C-c" 'compile)
+  (go-eldoc-setup)
+  (setq gofmt-command "goimports")
+  (add-hook 'before-save-hook 'gofmt-before-save)
+  (local-set-key (kbd "M-.") 'godef-jump)
+  )
+
+
+(add-hook 'go-mode-hook 'go-mode-setup)
+
+
 ;;general setting
 (setq transient-mark-mode t)
 (show-paren-mode t)

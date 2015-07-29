@@ -1,0 +1,50 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/alfred/" . ".emacs.d/")
+ ("/Users/alfred/Documents/repo/github/gocode/src/nf/" . "hello/")
+ ("/Users/alfred/Documents/repo/github/gocode/src/" . "nf/")
+ ("/Users/alfred/Documents/repo/github/gocode/" . "src/")
+ ("/Users/alfred/Documents/repo/github/" . "gocode/")
+ ("/Users/alfred/Documents/repo/" . "github/")
+ ("/Users/alfred/Documents/" . "repo/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/alfred/.emacs.d/"
+ "/Users/alfred/Documents/repo/github/gocode/src/nf/hello/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "hello.go"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/alfred/.emacs.d/" (21944 32100 0 0) "tramp" "themes/" "srecode-map.el" "smart-mode-line-powerline-theme.el" "semanticdb/" "saveplace.el" "places" "moe-theme.el/" "lisp/" "init.el~" "init.el" "eshell/" "emacs-color-theme-solarized/" "elpa/" "auto-save-list/" "ac-comphist.dat" ".git/" "../" "./")
+
+ ("/Users/alfred/Documents/repo/github/gocode/src/nf/hello/" (21944 32255 0 0) "hello.go~" "hello.go" "hello" "../" "./")
+
+ ("/Users/alfred/Documents/repo/github/gocode/src/nf/" (21924 47689 0 0) "string/" "hello/" "../" "./")
+
+ ("/Users/alfred/Documents/repo/github/gocode/src/" (21926 5181 0 0) "nf/" "gopkg.in/" "golang.org/" "github.com/" "bitbucket.org/" "../" "./")
+
+ ("/Users/alfred/Documents/repo/github/gocode/pkg/" (21924 47839 0 0) "darwin_amd64/" "../" "./")
+
+ ("/Users/alfred/Documents/repo/github/gocode/" (21924 47839 0 0) "src/" "pkg/" "bin/" "../" "./")
+
+ ("/Users/alfred/Documents/repo/github/" (21942 55394 0 0) "viper/" "tour/" "lma_v1.0/" "leetcode/" "hugo/" "homepage/" "gocode/" "gittest/" "cobra/" "blogger/" ".DS_Store" "../" "./")
+
+ ("/Users/alfred/Documents/repo/" (21933 36389 0 0) "VSSGP-master.zip" "vdpgm.tar.gz" "vdpgm/" "vap/" "test/" "RL_sim.zip" "RL_sim/" "rl-pomdp.tar.gz" "rl-pomdp/" "pomcp-1.0/" "pgpr/" "onlinehdp.tar.gz" "onlinehdp/" "octopress/" "npbayes-r21.tgz" "npbayes-r21/" "npbayes-r1.tgz" "npbayes-r1/" "mcvi-0.2.tar.gz" "mcvi-0.2/" "matlab/" "lma/" "libplump-0.1/" "latest.tar.gz" "IVMCPP0p12.zip" "IVMCPP0p12/" "interview/" "hadoop-2.7.0.tar.gz" "hadoop-2.7.0/" "GParML-public-master.zip" "GParML-public-master/" "GP_py/" "gocode/" "github/" "fbm.1999-03-13.tar" "fbm.1999-03-13/" "fbm.1998-09-01.tar" "fbm.1998-09-01/" "C-POMDP.tar.gz" ".DS_Store" "../" "./")
+
+ ("/Users/alfred/Documents/" (21941 53755 0 0) "workspace/" "Test/" "review.pdf" "research/" "repo/" "others/" "MATLAB/" "lectures/" "data/" "Adobe/" ".VIPAccess.plist" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/alfred/" (21944 30497 0 0) "tmp/" "Public/" "Pictures/" "Music/" "Movies/" "matlab_crash_dump.6702-1" "matlab_crash_dump.5989-1" "matlab_crash_dump.5627-1" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".zshrc" ".zlogin" ".zinc/" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".ssh/" ".spark_history" ".sh_history" ".rvm/" ".rbenv/" ".python27_compiled/" ".profile" ".mkshrc" ".matplotlib/" ".matlab/" ".macports/" ".m2/" ".lesshst" ".ipython/" ".gnuplot_history" ".gitconfig~" ".gitconfig" ".gem/" ".emacs~" ".emacs_bash~" ".emacs_bash" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".cups/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_profile~" ".bash_profile.macports-saved_2014-10-21_at_10:51:54" ".bash_profile" ".bash_history" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

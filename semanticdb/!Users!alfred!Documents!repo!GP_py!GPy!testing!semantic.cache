@@ -1,0 +1,289 @@
+;; Object testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testing/"
+  :tables
+  (list
+    (semanticdb-table "pickle_tests.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+Created on 13 Mar 2014
+
+@author: maxz
+'''" code nil nil [1 46])
+            ("itertools" include nil nil [47 73])
+            ("unittest" include nil nil [47 73])
+            ("pickle" include nil nil [100 113])
+            ("numpy" include nil nil [114 132])
+            ("GPy.core.parameterization.index_operations" include nil nil [133 247])
+            ("tempfile" include nil nil [248 263])
+            ("GPy.core.parameterization.param" include nil nil [264 313])
+            ("GPy.core.parameterization.observable_array" include nil nil [314 374])
+            ("GPy.core.parameterization.priors" include nil nil [375 428])
+            ("GPy.kern._src.rbf" include nil nil [429 462])
+            ("GPy.kern._src.linear" include nil nil [463 502])
+            ("GPy.kern._src.static" include nil nil [503 547])
+            ("GPy.examples.dimensionality_reduction" include nil nil [548 612])
+            ("GPy.core.parameterization.variational" include nil nil [613 678])
+            ("GPy.models.gp_regression" include nil nil [679 728])
+            ("toy_model" function nil nil [730 846])
+            ("ListDictTestCase" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("assertListDictEquals" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [919 923])
+                            ("d1" variable nil (reparse-symbol function_parameters) [925 927])
+                            ("d2" variable nil (reparse-symbol function_parameters) [929 931])
+                            ("msg" variable nil (reparse-symbol function_parameters) [933 936]))                          )
+                        (reparse-symbol indented_block_body) [894 1039])
+                    ("assertArrayListEquals" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1069 1073])
+                            ("l1" variable nil (reparse-symbol function_parameters) [1075 1077])
+                            ("l2" variable nil (reparse-symbol function_parameters) [1079 1081]))                          )
+                        (reparse-symbol indented_block_body) [1043 1179]))                  
+                :type "class")
+                nil [847 1179])
+            ("Test" type
+               (:superclasses ("ListDictTestCase")
+                :members 
+                  ( ("test_parameter_index_operations" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1250 1254]))                          )
+                        (reparse-symbol indented_block_body) [1214 2156])
+                    ("test_param" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2176 2180]))                          )
+                        (reparse-symbol indented_block_body) [2161 2809])
+                    ("test_observable_array" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2840 2844]))                          )
+                        (reparse-symbol indented_block_body) [2814 3234])
+                    ("test_parameterized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3262 3266]))                          )
+                        (reparse-symbol indented_block_body) [3239 4724])
+                    ("test_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4744 4748]))                          )
+                        (reparse-symbol indented_block_body) [4729 5621])
+                    ("test_modelrecreation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5651 5655]))                          )
+                        (reparse-symbol indented_block_body) [5626 6735])
+                    ("test_posterior" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6759 6763]))                          )
+                        (reparse-symbol indented_block_body) [6740 7743])
+                    ("test_model_concat" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7770 7774]))                          )
+                        (reparse-symbol indented_block_body) [7748 8759])
+                    ("_callback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8778 8782])
+                            ("what" variable nil (reparse-symbol function_parameters) [8784 8788])
+                            ("which" variable nil (reparse-symbol function_parameters) [8790 8795]))                          )
+                        (reparse-symbol indented_block_body) [8764 8822])
+                    ("test_add_observer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8868 8872]))                          
+                        :decorators 
+                          ( ("unittest.skip" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [8827 9535]))                  
+                :type "class")
+                nil [1180 9535])
+            ("if" code nil nil [9536 9655]))          
+      :file "pickle_tests.py"
+      :pointmax 9655
+      :fsize 9654
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "fitc.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [98 113])
+            ("numpy" include nil nil [114 132])
+            ("GPy" include nil nil [133 143])
+            ("FITCtest" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [194 198]))                          )
+                        (reparse-symbol indented_block_body) [184 730])
+                    ("test_fitc_1d" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [752 756]))                          )
+                        (reparse-symbol indented_block_body) [735 934])
+                    ("test_fitc_2d" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [956 960]))                          )
+                        (reparse-symbol indented_block_body) [939 1138]))                  
+                :type "class")
+                nil [145 1138]))          
+      :file "fitc.py"
+      :pointmax 1139
+      :fsize 1138
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+
+MaxZ
+
+\"\"\"" code nil nil [97 111])
+            ("unittest" include nil nil [112 127])
+            ("sys" include nil nil [128 138])
+            ("deepTest" function (:arguments 
+              ( ("reason" variable nil (reparse-symbol function_parameters) [153 159]))              ) nil [140 292]))          
+      :file "__init__.py"
+      :pointmax 292
+      :fsize 291
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "examples_tests.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [115 130])
+            ("numpy" include nil nil [131 149])
+            ("GPy" include nil nil [150 160])
+            ("inspect" include nil nil [161 175])
+            ("pkgutil" include nil nil [176 190])
+            ("os" include nil nil [191 200])
+            ("random" include nil nil [201 214])
+            ("nose.tools" include nil nil [215 245])
+            ("sys" include nil nil [246 256])
+            ("itertools" include nil nil [257 273])
+            ("ExamplesTests" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("_checkgrad" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [334 338])
+                            ("Model" variable nil (reparse-symbol function_parameters) [340 345]))                          )
+                        (reparse-symbol indented_block_body) [319 391])
+                    ("_model_instance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [416 420])
+                            ("Model" variable nil (reparse-symbol function_parameters) [422 427]))                          )
+                        (reparse-symbol indented_block_body) [396 485]))                  
+                :type "class")
+                nil [275 485])
+            ("model_checkgrads" function (:arguments 
+              ( ("model" variable nil (reparse-symbol function_parameters) [507 512]))              ) nil [486 648])
+            ("model_instance" function (:arguments 
+              ( ("model" variable nil (reparse-symbol function_parameters) [668 673]))              ) nil [649 727])
+            ("flatten_nested" function (:arguments 
+              ( ("lst" variable nil (reparse-symbol function_parameters) [747 750]))              ) nil [728 952])
+            ("test_models" function (:decorators 
+              ( ("nottest" function (:type "decorator") nil nil))              ) nil [953 3580])
+            ("if" code nil nil [3582 3709]))          
+      :file "examples_tests.py"
+      :pointmax 3709
+      :fsize 3708
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 2409 . 3205) (NEWLINE 2408 . 2409) (COLON 2407 . 2408) (ELSE 2403 . 2407) (INDENT_BLOCK 2307 . 2391) (NEWLINE 2306 . 2307) (COLON 2305 . 2306) (TRY 2086 . 2089) (AS 2301 . 2303)))
+    (semanticdb-table "observable_tests.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [97 112])
+            ("GPy.core.parameterization.parameterized" include nil nil [113 178])
+            ("GPy.core.parameterization.param" include nil nil [179 228])
+            ("numpy" include nil nil [229 241])
+            ("_trigger_start" code nil nil [265 284])
+            ("ParamTestParent" type
+               (:superclasses ("Parameterized")
+                :members 
+                  ( ("parent_changed_count" variable nil (reparse-symbol indented_block_body) [328 365])
+                    ("parameters_changed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [393 397]))                          )
+                        (reparse-symbol indented_block_body) [370 439]))                  
+                :type "class")
+                nil [286 439])
+            ("ParameterizedTest" type
+               (:superclasses ("Parameterized")
+                :members 
+                  ( ("params_changed_count" variable nil (reparse-symbol indented_block_body) [523 560])
+                    ("parameters_changed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [588 592]))                          )
+                        (reparse-symbol indented_block_body) [565 634]))                  
+                :type "class")
+                nil [440 634])
+            ("Test" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [681 685]))                          )
+                        (reparse-symbol indented_block_body) [671 1510])
+                    ("_trigger" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1528 1532])
+                            ("me" variable nil (reparse-symbol function_parameters) [1534 1536])
+                            ("which" variable nil (reparse-symbol function_parameters) [1538 1543]))                          )
+                        (reparse-symbol indented_block_body) [1515 1751])
+                    ("_trigger_priority" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1778 1782])
+                            ("me" variable nil (reparse-symbol function_parameters) [1784 1786])
+                            ("which" variable nil (reparse-symbol function_parameters) [1788 1793]))                          )
+                        (reparse-symbol indented_block_body) [1756 1945])
+                    ("test_observable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1970 1974]))                          )
+                        (reparse-symbol indented_block_body) [1950 4128])
+                    ("test_set_params" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4153 4157]))                          )
+                        (reparse-symbol indented_block_body) [4133 4745])
+                    ("test_priority_notify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4776 4780]))                          )
+                        (reparse-symbol indented_block_body) [4751 5205])
+                    ("test_priority" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5228 5232]))                          )
+                        (reparse-symbol indented_block_body) [5210 5973]))                  
+                :type "class")
+                nil [635 5973])
+            ("if" code nil nil [5974 6070]))          
+      :file "observable_tests.py"
+      :pointmax 6070
+      :fsize 6069
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!alfred!Documents!repo!GP_py!GPy!testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

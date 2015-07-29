@@ -1,0 +1,229 @@
+;; Object GParML-public-master/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "GParML-public-master/"
+  :tables
+  (list
+    (semanticdb-table "predict.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 13])
+            ("glob" include nil nil [14 25])
+            ("os" include nil nil [26 35])
+            ("scipy" include nil nil [36 48])
+            ("scipy.spatial" include nil nil [49 69])
+            ("local_MapReduce" include nil nil [70 92])
+            ("parallel_GPLVM" include nil nil [93 114])
+            ("scg_adapted" include nil nil [115 150])
+            ("supporting_functions" include nil nil [151 184])
+            ("''' Some globals which are shared among all functions '''" code nil nil [186 243])
+            ("options" variable nil nil [244 256])
+            ("flat_statistics_bounds" variable nil nil [257 284])
+            ("shape" variable nil nil [285 295])
+            ("global_statistics" variable nil nil [296 318])
+            ("Y_test" variable nil nil [319 330])
+            ("accumulated_statistics" variable nil nil [331 358])
+            ("test" function (:arguments 
+              ( ("options_" variable nil (reparse-symbol function_parameters) [369 377])
+                ("Y_test_" variable nil (reparse-symbol function_parameters) [379 386])
+                ("mask" variable nil (reparse-symbol function_parameters) [388 392])
+                ("is_random_init" variable nil (reparse-symbol function_parameters) [399 413])
+                ("random_iterations" variable nil (reparse-symbol function_parameters) [421 438])
+                ("random_restarts" variable nil (reparse-symbol function_parameters) [444 459]))              ) nil [360 5135])
+            ("''' Optimisation support function '''" code nil nil [5137 5174])
+            ("likelihood_and_gradient" function (:arguments 
+              ( ("flat_array" variable nil (reparse-symbol function_parameters) [5204 5214])
+                ("iteration" variable nil (reparse-symbol function_parameters) [5216 5225])
+                ("step_size" variable nil (reparse-symbol function_parameters) [5229 5238]))              ) nil [5176 7134])
+            ("''' If ran as main do some debugging '''" code nil nil [7136 7176])
+            ("main" function nil nil [7178 7989])
+            ("if" code nil nil [7990 8028]))          
+      :file "predict.py"
+      :pointmax 8028
+      :fsize 8027
+      :lastmodtime '(21234 45430 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "local_MapReduce.py"
+      :file "local_MapReduce.py"
+      :fsize 17276
+      :lastmodtime '(21234 45430 0 0))
+    (semanticdb-table "parallel_GPLVM.py"
+      :file "parallel_GPLVM.py"
+      :fsize 23696
+      :lastmodtime '(21234 45430 0 0))
+    (semanticdb-table "scg_adapted.py"
+      :file "scg_adapted.py"
+      :fsize 12099
+      :lastmodtime '(21234 45430 0 0))
+    (semanticdb-table "supporting_functions.py"
+      :file "supporting_functions.py"
+      :fsize 6056
+      :lastmodtime '(21234 45430 0 0))
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [1 16])
+            ("argparse" include nil nil [17 32])
+            ("numpy" include nil nil [33 51])
+            ("numpy.random" include nil nil [52 78])
+            ("numpy.linalg" include nil nil [79 108])
+            ("matplotlib.pyplot" include nil nil [109 140])
+            ("nputil" include nil nil [142 155])
+            ("partial_terms" include nil nil [156 176])
+            ("kernels" include nil nil [177 191])
+            ("sys" include nil nil [193 203])
+            ("sys" code nil nil [204 234])
+            ("GPy" include nil nil [235 245])
+            ("parser" variable nil nil [451 515])
+            ("parser" code nil nil [516 624])
+            ("args" variable nil nil [625 651])
+            ("TestSequenceFunctions" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [715 719]))                          )
+                        (reparse-symbol indented_block_body) [705 1893])
+                    ("genPriorData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1915 1919]))                          )
+                        (reparse-symbol indented_block_body) [1898 2460])
+                    ("test_dF_dZ" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2480 2484]))                          )
+                        (reparse-symbol indented_block_body) [2465 4031])
+                    ("test_dF_dalpha" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4056 4060]))                          )
+                        (reparse-symbol indented_block_body) [4037 6171])
+                    ("test_dF_dsf2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6193 6197]))                          )
+                        (reparse-symbol indented_block_body) [6176 7663])
+                    ("test_dF_dbeta" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7686 7690]))                          )
+                        (reparse-symbol indented_block_body) [7668 8655])
+                    ("test_F_to_GPy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9732 9736]))                          )
+                        (reparse-symbol indented_block_body) [9714 10215])
+                    ("test_mu" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11157 11161]))                          )
+                        (reparse-symbol indented_block_body) [11145 11618])
+                    ("test_S" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11634 11638]))                          )
+                        (reparse-symbol indented_block_body) [11623 12091]))                  
+                :type "class")
+                nil [653 12091])
+            ("rnd" code nil nil [12092 12102])
+            ("suite" variable nil nil [12103 12177])
+            ("for" code nil nil [12178 12249]))          
+      :file "test.py"
+      :pointmax 12249
+      :fsize 12248
+      :lastmodtime '(21234 45430 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "nputil.py"
+      :file "nputil.py"
+      :fsize 3288
+      :lastmodtime '(21234 45430 0 0))
+    (semanticdb-table "partial_terms.py"
+      :file "partial_terms.py"
+      :fsize 19036
+      :lastmodtime '(21234 45430 0 0))
+    (semanticdb-table "kernels.py"
+      :file "kernels.py"
+      :fsize 6105
+      :lastmodtime '(21234 45430 0 0))
+    (semanticdb-table "scg-example.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [1 11])
+            ("os.path" include nil nil [12 26])
+            ("scipy" include nil nil [27 39])
+            ("numpy" include nil nil [40 52])
+            ("partial_terms" include nil nil [53 79])
+            ("kernels" include nil nil [80 94])
+            ("numpy.linalg.linalg" include nil nil [95 138])
+            ("scg" include nil nil [139 158])
+            ("D" variable nil nil [160 165])
+            ("Q" variable nil nil [166 172])
+            ("M" variable nil nil [173 179])
+            ("N" variable nil nil [180 186])
+            ("Y" variable nil nil [187 193])
+            ("X_mu" variable nil nil [194 203])
+            ("X_S" variable nil nil [204 212])
+            ("Kmm" variable nil nil [213 221])
+            ("Kmm_inv" variable nil nil [222 234])
+            ("accumulated_statistics" variable nil nil [235 262])
+            ("flat_global_statistics_bounds" variable nil nil [263 297])
+            ("global_statistics_names" variable nil nil [298 326])
+            ("fix_beta" variable nil nil [327 340])
+            ("main" function nil nil [342 3885])
+            ("likelihood" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [3901 3902]))              ) nil [3886 4073])
+            ("gradient" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [4087 4088]))              ) nil [4074 4268])
+            ("'''
+Likelihood and gradient functions
+'''" code nil nil [4269 4310])
+            ("likelihood_and_gradient" function (:arguments 
+              ( ("flat_array" variable nil (reparse-symbol function_parameters) [4339 4349]))              ) nil [4311 11071])
+            ("dF_dbeta2" code nil nil [9481 9538])
+            ("PCA" function
+               (:documentation "
+    Principal component analysis: maximum likelihood solution by SVD
+    Adapted from GPy.util.linalg
+    Arguments
+    ---------
+    :param Y: NxD np.array of data
+    :param input_dim: int, dimension of projection
+
+    Returns
+    -------
+    :rval X: - Nxinput_dim np.array of dimensionality reduced data
+    W - input_dimxD mapping from X to Y
+    "
+                :arguments 
+                  ( ("Y_name" variable nil (reparse-symbol function_parameters) [11081 11087])
+                    ("input_dim" variable nil (reparse-symbol function_parameters) [11089 11098]))                  )
+                nil [11073 11727])
+            ("flatten_global_statistics" function (:arguments 
+              ( ("global_statistics" variable nil (reparse-symbol function_parameters) [11758 11775]))              ) nil [11728 11960])
+            ("rebuild_global_statistics" function (:arguments 
+              ( ("global_statistics_names" variable nil (reparse-symbol function_parameters) [11991 12014])
+                ("flat_array" variable nil (reparse-symbol function_parameters) [12016 12026]))              ) nil [11961 12295])
+            ("lim_val" code nil nil [12297 12341])
+            ("transform" function (:arguments 
+              ( ("b" variable nil (reparse-symbol function_parameters) [12441 12442])
+                ("x" variable nil (reparse-symbol function_parameters) [12444 12445]))              ) nil [12427 12703])
+            ("transform_back" function (:arguments 
+              ( ("b" variable nil (reparse-symbol function_parameters) [12816 12817])
+                ("x" variable nil (reparse-symbol function_parameters) [12819 12820]))              ) nil [12797 13109])
+            ("transform_grad" function (:arguments 
+              ( ("b" variable nil (reparse-symbol function_parameters) [13209 13210])
+                ("x" variable nil (reparse-symbol function_parameters) [13212 13213]))              ) nil [13190 13478])
+            ("if" code nil nil [13480 13518]))          
+      :file "scg-example.py"
+      :pointmax 13518
+      :fsize 13880
+      :lastmodtime '(21234 45430 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "scg.py"
+      :file "scg.py"
+      :fsize 6012
+      :lastmodtime '(21234 45430 0 0)))
+  :file "!Users!alfred!Documents!repo!GParML-public-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,132 @@
+;; Object hip_bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hip_bin/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("HOME" variable (:default-value ("..")) nil [1 11])
+            ("DEMO_DIR" variable (:default-value (".")) nil [11 24])
+            ("SRC_DIR" variable (:default-value ("$(HOME)/src")) nil [24 46])
+            ("LIB_DIR" variable (:default-value ("$(HOME)/lib")) nil [46 68])
+            ("LIBS" variable (:default-value ("-lpthread")) nil [68 86])
+            ("INCS" variable (:default-value ("-I$(SRC_DIR)" "-I$(LIB_DIR)")) nil [86 120])
+            ("CC" variable (:default-value ("$(HOME)/mpi/bin/mpicxx")) nil [120 148])
+            ("CFLAGS" variable (:default-value ("-O3" "-D__x86_64__")) nil [148 174])
+            ("LDFLAGS" variable (:default-value ("-O3")) nil [210 229])
+            (".cc.o" function nil nil [313 349])
+            ("deps" function nil nil [350 356])
+            (".PHONY" function (:arguments ("all" "clean" "deps" "release" "debug" "echo" "doc")) nil [418 464])
+            ("all" function (:arguments ("fgp" "prep" "pic" "pitc" "ppitc" "ppic" "eigen")) nil [465 505])
+            ("eigen" function (:arguments ("deps" "$(OBJS)")) nil [505 610])
+            ("prep" function (:arguments ("deps" "$(OBJS)")) nil [610 714])
+            ("fgp" function (:arguments ("deps" "$(OBJS)")) nil [714 816])
+            ("pic" function (:arguments ("deps" "$(OBJS)")) nil [816 918])
+            ("pitc" function (:arguments ("deps" "$(OBJS)")) nil [918 1022])
+            ("ppic" function (:arguments ("deps" "$(OBJS)")) nil [1022 1126])
+            ("ppitc" function (:arguments ("deps" "$(OBJS)")) nil [1126 1232])
+            ("plma" function (:arguments ("deps" "$(OBJS)")) nil [1232 1336])
+            ("lma" function (:arguments ("deps" "$(OBJS)")) nil [1336 1438])
+            ("echo" function nil nil [1438 1582])
+            ("clean" function nil nil [1583 1704])
+            ("clog" function nil nil [1704 1730])
+            ("sty" function nil nil [1730 1852])
+            ("doc" function nil nil [1852 1925]))          
+      :file "Makefile"
+      :pointmax 1925
+      :fsize 1924
+      :lastmodtime '(21880 63028)
+      :unmatched-syntax '((thing 396 . 416) (thing 395 . 395) (thing 1898 . 1898) (thing 1899 . 1924)))
+    (semanticdb-table "demo_prep.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("pgpr_util.h" include nil nil [1 23])
+            ("pgpr_parse.h" include nil nil [24 47])
+            ("pgpr_data.h" include nil nil [48 70])
+            ("functional" include (:system-flag t) nil [71 92])
+            ("string" include (:system-flag t) nil [93 110])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [120 129])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [130 144]))                  
+                :type "int")
+                nil [111 6716]))          
+      :file "demo_prep.cc"
+      :pointmax 6717
+      :fsize 6716
+      :lastmodtime '(21880 63030)
+      :unmatched-syntax nil)
+    (semanticdb-table "prep.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [1 16])
+            ("random" include nil nil [17 30])
+            ("math" include nil nil [31 42])
+            ("data" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [95 120])
+                            ("self" variable nil (reparse-symbol indented_block_body) [129 158])
+                            ("self" variable nil (reparse-symbol indented_block_body) [167 196])
+                            ("self" code nil (reparse-symbol indented_block_body) [205 221])
+                            ("self" variable nil (reparse-symbol indented_block_body) [230 294])
+                            ("self" variable nil (reparse-symbol indented_block_body) [303 390]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [80 84]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [67 391])
+                    ("readHyper" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [409 413]))                          )
+                        (reparse-symbol indented_block_body) [395 1319])
+                    ("parse_args" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1338 1342]))                          )
+                        (reparse-symbol indented_block_body) [1323 2722])
+                    ("getTrainData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2748 2752]))                          )
+                        (reparse-symbol indented_block_body) [2731 3169])
+                    ("getTestData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3215 3219]))                          )
+                        (reparse-symbol indented_block_body) [3199 3426])
+                    ("getSupport" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3454 3458]))                          )
+                        (reparse-symbol indented_block_body) [3439 3680])
+                    ("getHyper" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3697 3701]))                          )
+                        (reparse-symbol indented_block_body) [3684 3946])
+                    ("writeData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3964 3968])
+                            ("filename" variable nil (reparse-symbol function_parameters) [3970 3978])
+                            ("data" variable nil (reparse-symbol function_parameters) [3980 3984]))                          )
+                        (reparse-symbol indented_block_body) [3950 4150]))                  
+                :type "class")
+                nil [45 4150])
+            ("if" code nil nil [4151 4285]))          
+      :file "prep.py"
+      :pointmax 4286
+      :fsize 4285
+      :lastmodtime '(21895 53037)
+      :unmatched-syntax nil))
+  :file "!ssh:tembusu:!home!y!yujiang!lma_v1.0!hip_bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

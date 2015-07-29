@@ -1,0 +1,117 @@
+ipython
+python
+ipython
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+Welcome to the Emacs shell
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py 
+python leetcodeSolution.py
+python leetcodeSolution.py
+python leetcodeSolution.py
+python leetcodeSolution.py
+python leetcodeSolution.py
+python leetcodeSolution.py
+ls
+cd ~/Documents/repo/github/gocode/src/nf/hello/
+ls
+go install
+go
+go
+go
+go
+go
+hugo
+echo $PATH
+ls
+cd Documents/
+ls
+cd repo/github/homepage/
+ls
+cp themes/hugo-incorporated/config.yaml .
+ls
+rm config.toml
+rm config.toml\~
+ls
+ls
+cd themes/hugo-incorporated/
+ls
+cd images/
+ls
+cd ..
+ls
+cd static/
+ls
+cd images/
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd layouts/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd layouts/
+ls
+cp ../themes/hugo-incorporated/layouts/index.html .
+ls
+cp ../themes/hugo-incorporated/layouts/partials/header.html partials/.
+ls
+rm partials
+cp -f../themes/hugo-incorporated/layouts/partials/header.html partials/.
+cp -f ../themes/hugo-incorporated/layouts/partials/header.html partials/.
+ls
+rm partials 
+cp -f ../themes/hugo-incorporated/layouts/partials/header.html partials/header.html
+mkdir partials
+cp -f ../themes/hugo-incorporated/layouts/partials/header.html partials/header.html
+ls
+c d..
+cd ..
+cd layouts/
+cp themes/hugo-incorporated/config.yaml ../
+cd ..
+cp themes/hugo-incorporated/config.yaml .
+cd layouts/
+cp -f ../themes/hugo-incorporated/layouts/partials/header.html partials/header.html
+ls
+rm -rf *
+ls
+cd ..
+ls
+rm config.yaml\~
+rm config.yaml 
+ls
+ls
+cp themes/hugo-incorporated/config.yaml .
+cp themes/hugo-incorporated/config.yaml .
+ls
+python
+ls
+go
+source ~/.bash_profile

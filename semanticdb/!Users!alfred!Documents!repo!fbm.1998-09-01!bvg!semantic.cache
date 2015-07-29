@@ -1,0 +1,27 @@
+;; Object bvg/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bvg/"
+  :tables
+  (list
+    (semanticdb-table "bvg.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("bvg_spec" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("std1" variable (:type "double") (reparse-symbol classsubparts) [776 794])
+                          ("std2" variable (:type "double") (reparse-symbol classsubparts) [776 794])
+                          ("corr" variable (:type "double") (reparse-symbol classsubparts) [823 835])
+                          ("rep" variable (:type "int") (reparse-symbol classsubparts) [858 866]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [756 909]))          
+      :file "bvg.h"
+      :pointmax 910
+      :fsize 909
+      :lastmodtime '(13030 31181 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!alfred!Documents!repo!fbm.1998-09-01!bvg!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

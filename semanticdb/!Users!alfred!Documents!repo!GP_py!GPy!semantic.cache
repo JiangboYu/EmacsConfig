@@ -1,0 +1,43 @@
+;; Object GPy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "GPy/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [114 129])
+            ("warnings" code nil nil [130 192])
+            ("core" include nil nil [194 205])
+            ("core.parameterization" include nil nil [206 263])
+            ("constraints" variable nil nil [264 293])
+            ("models" include nil nil [294 307])
+            ("mappings" include nil nil [308 323])
+            ("inference" include nil nil [324 340])
+            ("util" include nil nil [341 352])
+            ("examples" include nil nil [353 368])
+            ("likelihoods" include nil nil [369 387])
+            ("testing" include nil nil [388 402])
+            ("numpy.testing" include nil nil [403 435])
+            ("kern" include nil nil [436 447])
+            ("plotting" include nil nil [448 463])
+            ("core" include nil nil [499 521])
+            ("core.parameterization" include nil nil [522 583])
+            ("try" code nil nil [595 848])
+            ("load" function
+               (:documentation "
+    Load a previously pickled model, using `m.pickle('path/to/file.pickle)'
+
+    :param file_name: path/to/file.pickle
+    "
+                :arguments 
+                  ( ("file_path" variable nil (reparse-symbol function_parameters) [858 867]))                  )
+                nil [849 1244]))          
+      :file "__init__.py"
+      :pointmax 1244
+      :fsize 1243
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!alfred!Documents!repo!GP_py!GPy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

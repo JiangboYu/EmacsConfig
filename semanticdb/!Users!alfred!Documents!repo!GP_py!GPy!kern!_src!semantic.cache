@@ -1,0 +1,101 @@
+;; Object _src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "_src/"
+  :tables
+  (list
+    (semanticdb-table "ODE_st.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("kern" include nil nil [114 135])
+            ("Param" include nil nil [166 178])
+            ("Logexp" include nil nil [225 238])
+            ("numpy" include nil nil [239 257])
+            ("independent_outputs" include nil nil [258 305])
+            ("ODE_st" type
+               (:documentation "
+    kernel resultiong from a first order ODE with OU driving GP
+
+    :param input_dim: the number of input dimension, has to be equal to one
+    :type input_dim: int
+    :param varianceU: variance of the driving GP
+    :type varianceU: float
+    :param lengthscaleU: lengthscale of the driving GP  (sqrt(3)/lengthscaleU)
+    :type lengthscaleU: float
+    :param varianceY: 'variance' of the transfer function
+    :type varianceY: float
+    :param lengthscaleY: 'lengthscale' of the transfer function (1/lengthscaleY)
+    :type lengthscaleY: float
+    :rtype: kernel object
+
+    "
+                :superclasses ("Kern")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("assert" code nil (reparse-symbol indented_block_body) [1087 1140])
+                            ("super" code nil (reparse-symbol indented_block_body) [1149 1207])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1217 1279])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1288 1350])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1359 1430])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1439 1510])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1528 1559])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1568 1600])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1609 1641])
+                            ("self" code nil (reparse-symbol indented_block_body) [1651 1771]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [940 944])
+                            ("input_dim" variable nil (reparse-symbol function_parameters) [946 955])
+                            ("a" variable nil (reparse-symbol function_parameters) [957 958])
+                            ("b" variable nil (reparse-symbol function_parameters) [962 963])
+                            ("c" variable nil (reparse-symbol function_parameters) [968 969])
+                            ("variance_Yx" variable nil (reparse-symbol function_parameters) [973 984])
+                            ("variance_Yt" variable nil (reparse-symbol function_parameters) [988 999])
+                            ("lengthscale_Yx" variable nil (reparse-symbol function_parameters) [1005 1019])
+                            ("lengthscale_Yt" variable nil (reparse-symbol function_parameters) [1025 1039])
+                            ("active_dims" variable nil (reparse-symbol function_parameters) [1045 1056])
+                            ("name" variable nil (reparse-symbol function_parameters) [1063 1067]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [927 1772])
+                    ("K" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1784 1788])
+                            ("X" variable nil (reparse-symbol function_parameters) [1790 1791])
+                            ("X2" variable nil (reparse-symbol function_parameters) [1793 1795]))                          
+                        :documentation "Compute the covariance matrix between X and X2.")
+                        (reparse-symbol indented_block_body) [1778 4632])
+                    ("Kdiag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4647 4651])
+                            ("X" variable nil (reparse-symbol function_parameters) [4653 4654]))                          
+                        :documentation "Compute the diagonal of the covariance matrix associated to X.")
+                        (reparse-symbol indented_block_body) [4637 5610])
+                    ("update_gradients_full" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5650 5654])
+                            ("dL_dK" variable nil (reparse-symbol function_parameters) [5656 5661])
+                            ("X" variable nil (reparse-symbol function_parameters) [5663 5664])
+                            ("X2" variable nil (reparse-symbol function_parameters) [5666 5668]))                          
+                        :documentation "derivative of the covariance matrix with respect to the parameters.")
+                        (reparse-symbol indented_block_body) [5624 12855]))                  
+                :type "class")
+                nil [308 12855]))          
+      :file "ODE_st.py"
+      :pointmax 12856
+      :fsize 12855
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax '((thing 136 . 140) (thing 141 . 142) (thing 142 . 143) (thing 143 . 144) (thing 179 . 183) (thing 184 . 185) (thing 185 . 186) (thing 186 . 187)))
+    (semanticdb-table "kern.py"
+      :file "kern.py"
+      :fsize 11880
+      :lastmodtime '(21798 28545 0 0))
+    (semanticdb-table "independent_outputs.py"
+      :file "independent_outputs.py"
+      :fsize 10028
+      :lastmodtime '(21798 28545 0 0)))
+  :file "!Users!alfred!Documents!repo!GP_py!GPy!kern!_src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

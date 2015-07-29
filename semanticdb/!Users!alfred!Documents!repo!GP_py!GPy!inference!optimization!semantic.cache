@@ -1,0 +1,239 @@
+;; Object optimization/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "optimization/"
+  :tables
+  (list
+    (semanticdb-table "optimization.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [120 141])
+            ("scipy" include nil nil [142 168])
+            ("warnings" include nil nil [169 194])
+            ("try" code nil nil [196 313])
+            ("scg" include nil nil [313 332])
+            ("Optimizer" type
+               (:documentation "
+    Superclass for all the optimizers.
+
+    :param x_init: initial set of parameters
+    :param f_fp: function that returns the function AND the gradients at the same time
+    :param f: function to optimize
+    :param fp: gradients
+    :param messages: print messages from the optimizer?
+    :type messages: (True | False)
+    :param max_f_eval: maximum number of function evaluations
+
+    :rtype: optimizer object.
+
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [953 973])
+                            ("self" variable nil (reparse-symbol indented_block_body) [982 1002])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1011 1035])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1044 1061])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1070 1087])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1096 1118])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1127 1145])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1154 1187])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1196 1227])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1236 1266])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1275 1292])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1301 1328])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1337 1353])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1362 1378])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1387 1403])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1412 1430]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [803 807])
+                            ("x_init" variable nil (reparse-symbol function_parameters) [809 815])
+                            ("messages" variable nil (reparse-symbol function_parameters) [817 825])
+                            ("model" variable nil (reparse-symbol function_parameters) [833 838])
+                            ("max_f_eval" variable nil (reparse-symbol function_parameters) [845 855])
+                            ("max_iters" variable nil (reparse-symbol function_parameters) [861 870])
+                            ("ftol" variable nil (reparse-symbol function_parameters) [893 897])
+                            ("gtol" variable nil (reparse-symbol function_parameters) [904 908])
+                            ("xtol" variable nil (reparse-symbol function_parameters) [915 919])
+                            ("bfgs_factor" variable nil (reparse-symbol function_parameters) [926 937]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [790 1431])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1444 1448])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1450 1458]))                          )
+                        (reparse-symbol indented_block_body) [1436 1591])
+                    ("opt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1604 1608])
+                            ("f_fp" variable nil (reparse-symbol function_parameters) [1610 1614])
+                            ("f" variable nil (reparse-symbol function_parameters) [1621 1622])
+                            ("fp" variable nil (reparse-symbol function_parameters) [1629 1631]))                          )
+                        (reparse-symbol indented_block_body) [1596 1732])
+                    ("plot" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1746 1750]))                          
+                        :documentation "
+        See GPy.plotting.matplot_dep.inference_plots
+        ")
+                        (reparse-symbol indented_block_body) [1737 2042])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2060 2064]))                          )
+                        (reparse-symbol indented_block_body) [2048 2443]))                  
+                :type "class")
+                nil [334 2443])
+            ("opt_tnc" type
+               (:superclasses ("Optimizer")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Optimizer" code nil (reparse-symbol indented_block_body) [2519 2560])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2569 2613]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2487 2491])
+                            ("args" variable nil (reparse-symbol function_parameters) [2493 2498])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2500 2508]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2474 2614])
+                    ("opt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2627 2631])
+                            ("f_fp" variable nil (reparse-symbol function_parameters) [2633 2637])
+                            ("f" variable nil (reparse-symbol function_parameters) [2644 2645])
+                            ("fp" variable nil (reparse-symbol function_parameters) [2652 2654]))                          
+                        :documentation "
+        Run the TNC optimizer
+
+        ")
+                        (reparse-symbol indented_block_body) [2619 3496]))                  
+                :type "class")
+                nil [2444 3496])
+            ("opt_lbfgsb" type
+               (:superclasses ("Optimizer")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Optimizer" code nil (reparse-symbol indented_block_body) [3575 3616])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3625 3674]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3543 3547])
+                            ("args" variable nil (reparse-symbol function_parameters) [3549 3554])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3556 3564]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3530 3675])
+                    ("opt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3688 3692])
+                            ("f_fp" variable nil (reparse-symbol function_parameters) [3694 3698])
+                            ("f" variable nil (reparse-symbol function_parameters) [3705 3706])
+                            ("fp" variable nil (reparse-symbol function_parameters) [3713 3715]))                          
+                        :documentation "
+        Run the optimizer
+
+        ")
+                        (reparse-symbol indented_block_body) [3680 4781]))                  
+                :type "class")
+                nil [3497 4781])
+            ("opt_simplex" type
+               (:superclasses ("Optimizer")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Optimizer" code nil (reparse-symbol indented_block_body) [4861 4902])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4911 4968]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4829 4833])
+                            ("args" variable nil (reparse-symbol function_parameters) [4835 4840])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4842 4850]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4816 4969])
+                    ("opt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4982 4986])
+                            ("f_fp" variable nil (reparse-symbol function_parameters) [4988 4992])
+                            ("f" variable nil (reparse-symbol function_parameters) [4999 5000])
+                            ("fp" variable nil (reparse-symbol function_parameters) [5007 5009]))                          
+                        :documentation "
+        The simplex optimizer does not require gradients.
+        ")
+                        (reparse-symbol indented_block_body) [4974 5848]))                  
+                :type "class")
+                nil [4782 5848])
+            ("opt_rasm" type
+               (:superclasses ("Optimizer")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Optimizer" code nil (reparse-symbol indented_block_body) [5926 5967])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5976 6024]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5894 5898])
+                            ("args" variable nil (reparse-symbol function_parameters) [5900 5905])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5907 5915]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5881 6025])
+                    ("opt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6038 6042])
+                            ("f_fp" variable nil (reparse-symbol function_parameters) [6044 6048])
+                            ("f" variable nil (reparse-symbol function_parameters) [6055 6056])
+                            ("fp" variable nil (reparse-symbol function_parameters) [6063 6065]))                          
+                        :documentation "
+        Run Rasmussen's Conjugate Gradient optimizer
+        ")
+                        (reparse-symbol indented_block_body) [6030 7096]))                  
+                :type "class")
+                nil [5850 7096])
+            ("opt_SCG" type
+               (:superclasses ("Optimizer")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [7172 7320])
+                            ("Optimizer" code nil (reparse-symbol indented_block_body) [7328 7369])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7379 7423]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7140 7144])
+                            ("args" variable nil (reparse-symbol function_parameters) [7146 7151])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7153 7161]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7127 7424])
+                    ("opt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7437 7441])
+                            ("f_fp" variable nil (reparse-symbol function_parameters) [7443 7447])
+                            ("f" variable nil (reparse-symbol function_parameters) [7454 7455])
+                            ("fp" variable nil (reparse-symbol function_parameters) [7462 7464]))                          )
+                        (reparse-symbol indented_block_body) [7429 7984]))                  
+                :type "class")
+                nil [7097 7984])
+            ("get_optimizer" function (:arguments 
+              ( ("f_min" variable nil (reparse-symbol function_parameters) [8003 8008]))              ) nil [7985 8421]))          
+      :file "optimization.py"
+      :pointmax 8421
+      :fsize 8420
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax '((thing 1945 . 1949) (thing 1950 . 1951) (thing 1951 . 1952) (thing 1952 . 1953)))
+    (semanticdb-table "scg.py"
+      :file "scg.py"
+      :fsize 6796
+      :lastmodtime '(21798 28545 0 0)))
+  :file "!Users!alfred!Documents!repo!GP_py!GPy!inference!optimization!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

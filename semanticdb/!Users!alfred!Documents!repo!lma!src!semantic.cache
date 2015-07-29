@@ -1,0 +1,2867 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "pgpr_plma.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PGPR_PLMA_H_" variable (:constant-flag t) nil [383 395])
+            ("mpi.h" include nil nil [396 412])
+            ("pgpr_type.h" include nil nil [413 435])
+            ("pgpr_chol.h" include nil nil [436 458])
+            ("pgpr_cov.h" include nil nil [459 480])
+            ("parallel.h" include nil nil [481 502])
+            ("vector" include (:system-flag t) nil [503 520])
+            ("DEBUG" variable (:constant-flag t) nil [529 534])
+            ("min" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [568 574])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [574 580]))                  
+                :type "int")
+                nil [552 603])
+            ("pgpr_vap" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [905 913])
+                    ("cov" variable
+                       (:pointer 1
+                        :type ("pgpr_cov" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [915 930])
+                    ("localTrainSamples" variable
+                       (:pointer 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1013 1038])
+                    ("supportSamples" variable
+                       (:pointer 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1040 1062])
+                    ("globalTestSamples" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vdoub" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1064 1097])
+                    ("blocksize" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1099 1113])
+                    ("bandwidth" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1115 1129])
+                    ("numVirMachines" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1131 1150])
+                    ("localNumVirMachines" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1152 1176])
+                    ("localNumSamples" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1229 1249])
+                    ("firstVirMachineID" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1312 1334])
+                    ("h_mu" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1352 1362])
+                    ("rmse" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1364 1374])
+                    ("mnlp" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1376 1386])
+                    ("pmu" variable
+                       (:pointer 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1388 1399])
+                    ("pvar" variable
+                       (:pointer 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1401 1413])
+                    ("trueval" variable
+                       (:pointer 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1415 1430])
+                    ("elapsed" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1432 1445])
+                    ("myid" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1447 1456])
+                    ("public" label nil (reparse-symbol classsubparts) [1484 1491])
+                    ("pgpr_vap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("hypf" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1502 1514]))                          
+                        :type ("pgpr_vap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1493 1749])
+                    ("pgpr_vap" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1754 2055])
+                    ("loadSupportSample" function
+                       (:arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2081 2093]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2058 2675])
+                    ("loadTestSample" function
+                       (:arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2755 2766]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2736 3527])
+                    ("vap_cluster" function
+                       (:arguments 
+                          ( ("sample" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3546 3566]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3530 4438])
+                    ("loadLocalTrainSample" function
+                       (:arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4467 4478]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4441 6230])
+                    ("trans" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6249 6265])
+                            ("b" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6265 6274]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6238 6411])
+                    ("calcCovElement" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [6501 6511])
+                            ("b" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [6512 6522])
+                            ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [6522 6530]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [6479 6673])
+                    ("calcCovElement" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [6700 6710])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6711 6726])
+                            ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [6727 6735]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [6678 6877])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7918 7928])
+                            ("d2" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7929 7939])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7940 7949]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7905 8234])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8334 8344])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8344 8353]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8321 8691])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8708 8718])
+                            ("d2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Vdoub" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8718 8742])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8743 8752]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8695 9032])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9048 9058])
+                            ("blk" variable (:type "int") (reparse-symbol arg-sub-list) [9058 9066])
+                            ("d2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Vdoub" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9066 9090])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9091 9100]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9035 9412])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9427 9437])
+                            ("start_idx1" variable (:type "int") (reparse-symbol arg-sub-list) [9438 9453])
+                            ("length1" variable (:type "int") (reparse-symbol arg-sub-list) [9454 9466])
+                            ("d2" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9467 9477])
+                            ("start_idx2" variable (:type "int") (reparse-symbol arg-sub-list) [9478 9493])
+                            ("length2" variable (:type "int") (reparse-symbol arg-sub-list) [9495 9507])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9508 9517]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9414 9817])
+                    ("A_invB_C" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9916 9924])
+                            ("chol_b" variable
+                               (:pointer 1
+                                :type ("pgpr_chol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9925 9943])
+                            ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9944 9952])
+                            ("D" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9953 9962]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9896 10374])
+                    ("A_invB_AT2" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11068 11076])
+                            ("chol_b" variable
+                               (:pointer 1
+                                :type ("pgpr_chol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11077 11095])
+                            ("D" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11096 11105]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11046 11468])
+                    ("A_invB_AT" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11513 11522])
+                            ("chol_b" variable
+                               (:pointer 1
+                                :type ("pgpr_chol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11522 11541])
+                            ("D" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11542 11551]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11499 12117])
+                    ("diagA_invB_AT" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12163 12172])
+                            ("chol_b" variable
+                               (:pointer 1
+                                :type ("pgpr_chol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12172 12191])
+                            ("D" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12192 12201]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12145 12560])
+                    ("multiply" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12644 12660])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12661 12677])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12678 12688]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12630 13446])
+                    ("ATtimesB" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13479 13494])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13495 13510])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13511 13520]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13465 13574])
+                    ("diagATtimesA" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13611 13626])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13627 13636]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13593 13941])
+                    ("AtimesAT" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13980 13995])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13996 14005]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13966 14489])
+                    ("selfSub" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14504 14513])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14513 14528]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14491 14833])
+                    ("subtracts" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14851 14860])
+                            ("B" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14862 14872])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14873 14883]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14835 15249])
+                    ("subtract" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15266 15275])
+                            ("B" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15277 15287])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15288 15298]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15251 15490])
+                    ("subtract" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15508 15517])
+                            ("B" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15519 15529])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15530 15540]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15493 15861])
+                    ("selfAddition" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15884 15893])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15894 15909]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15865 16196])
+                    ("selfAddition" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16217 16226])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16227 16242]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16198 16398])
+                    ("addition" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16414 16430])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16431 16446])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16447 16457]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16400 16765])
+                    ("getCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [16786 16802])
+                            ("start_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [16803 16819])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [16820 16834])
+                            ("end_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [16835 16849])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16849 16860])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16861 16873]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16770 17288])
+                    ("getCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [17309 17325])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [17326 17340])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17341 17352])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17353 17365]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17293 17743])
+                    ("setCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [17763 17779])
+                            ("start_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [17780 17796])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [17797 17811])
+                            ("end_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [17812 17826])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17826 17837])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17838 17850]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17747 18235])
+                    ("printarray" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [18256 18263])
+                            ("size" variable (:type "int") (reparse-symbol arg-sub-list) [18263 18272]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18240 18364])
+                    ("print" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [18377 18392]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18366 18490])
+                    ("setCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [18509 18525])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [18526 18540])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18541 18552])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18553 18565]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18493 18908])
+                    ("setCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [18932 18948])
+                            ("start_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [18949 18965])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [18966 18980])
+                            ("end_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [18981 18995])
+                            ("ori" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [18995 19008])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19009 19021]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18916 19429])
+                    ("addNoise" function
+                       (:arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19445 19454]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19431 19518])
+                    ("addNoiseP" function
+                       (:arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19535 19544]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19520 19613])
+                    ("isElement" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [19630 19637])
+                            ("size" variable (:type "int") (reparse-symbol arg-sub-list) [19638 19647])
+                            ("element" variable (:type "int") (reparse-symbol arg-sub-list) [19648 19660]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [19615 19758])
+                    ("vap_regr" function (:type "double") (reparse-symbol classsubparts) [19761 55412])
+                    ("regress" function
+                       (:arguments 
+                          ( ("train" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [55427 55439])
+                            ("test" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [55440 55452])
+                            ("supset" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [55453 55467])
+                            ("blksize" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55468 55480])
+                            ("band" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55481 55490])
+                            ("virmachines" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55491 55507]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [55415 56616])
+                    ("outputRst" function
+                       (:arguments 
+                          ( ("output" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56636 56650]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [56621 57022]))                  
+                :type "class")
+                nil [888 57025]))          
+      :file "pgpr_plma.h"
+      :pointmax 57033
+      :fsize 57032
+      :lastmodtime '(21654 41851 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG" . ((number "1" 535 . 536)))
+          ("PGPR_PLMA_H_")
+          )
+)
+    (semanticdb-table "pgpr_type.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_PGPR_TYPE_H_" variable (:constant-flag t) nil [228 241])
+            ("fstream" include (:system-flag t) nil [242 260])
+            ("cmath" include (:system-flag t) nil [261 277])
+            ("complex" include (:system-flag t) nil [278 296])
+            ("iostream" include (:system-flag t) nil [297 316])
+            ("iomanip" include (:system-flag t) nil [317 335])
+            ("vector" include (:system-flag t) nil [336 353])
+            ("limits" include (:system-flag t) nil [354 371])
+            ("stdlib.h" include (:system-flag t) nil [372 391])
+            ("stdio.h" include (:system-flag t) nil [392 410])
+            ("time.h" include (:system-flag t) nil [411 428])
+            ("fcntl.h" include (:system-flag t) nil [429 447])
+            ("string.h" include (:system-flag t) nil [448 467])
+            ("ctype.h" include (:system-flag t) nil [468 486])
+            ("cfloat" include (:system-flag t) nil [487 504])
+            ("stdarg.h" include (:system-flag t) nil [505 524])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [526 546])
+            ("SUCC" variable (:constant-flag t) nil [563 567])
+            ("FAIL" variable (:constant-flag t) nil [578 582])
+            ("FALSE" variable (:constant-flag t) nil [594 599])
+            ("TRUE" variable (:constant-flag t) nil [610 614])
+            ("pgpr_vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [717 725])
+                    ("nn" variable (:type "int") (reparse-symbol classsubparts) [728 735])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [776 781])
+                    ("public" label nil (reparse-symbol classsubparts) [782 789])
+                    ("pgpr_vector" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("pgpr_vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [792 806])
+                    ("pgpr_vector" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [830 836]))                          
+                        :type ("pgpr_vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [818 837])
+                    ("pgpr_vector" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [873 879])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [880 891]))                          
+                        :type ("pgpr_vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [861 892])
+                    ("pgpr_vector" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pgpr_vector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [938 961]))                          
+                        :type ("pgpr_vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [926 962])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pgpr_vector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1009 1032]))                          
+                        :type ("pgpr_vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [985 1033])
+                    ("value_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1049 1070])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1126 1138]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1104 1139])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :arguments 
+                          ( ("i" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1185 1197]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1157 1204])
+                    ("size" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1207 1231])
+                    ("resize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("newn" variable (:type "int") (reparse-symbol arg-sub-list) [1246 1255]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1234 1256])
+                    ("assign" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("newn" variable (:type "int") (reparse-symbol arg-sub-list) [1306 1315])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1316 1327]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1294 1328])
+                    ("release" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1369 1384])
+                    ("pgpr_vector" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1387 1402]))                  )
+                nil [678 1405])
+            ("pgpr_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_vector" type (:type "class") nil nil)
+                :parent "pgpr_vector"
+                :constructor-flag t)
+                nil [1435 1503])
+            ("pgpr_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_vector" type (:type "class") nil nil)
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1552 1558]))                  
+                :parent "pgpr_vector"
+                :constructor-flag t)
+                nil [1505 1597])
+            ("pgpr_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_vector" type (:type "class") nil nil)
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1646 1652])
+                    ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1653 1664]))                  
+                :parent "pgpr_vector"
+                :constructor-flag t)
+                nil [1599 1743])
+            ("pgpr_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_vector" type (:type "class") nil nil)
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pgpr_vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1794 1820]))                  
+                :parent "pgpr_vector"
+                :constructor-flag t)
+                nil [1747 1912])
+            ("=" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pgpr_vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1976 2002]))                  
+                :parent "pgpr_vector"
+                :operator-flag t)
+                nil [1914 2389])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2448 2460]))                  
+                :typemodifiers ("inline")
+                :parent "pgpr_vector"
+                :operator-flag t)
+                nil [2391 2602])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2667 2679]))                  
+                :constant-flag t
+                :typemodifiers ("inline")
+                :parent "pgpr_vector"
+                :operator-flag t)
+                nil [2604 2827])
+            ("size" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :typemodifiers ("inline")
+                :parent "pgpr_vector")
+                nil [2829 2904])
+            ("resize" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("newn" variable (:type "int") (reparse-symbol arg-sub-list) [2953 2962]))                  
+                :parent "pgpr_vector")
+                nil [2906 3073])
+            ("assign" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("newn" variable (:type "int") (reparse-symbol arg-sub-list) [3122 3131])
+                    ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3132 3143]))                  
+                :parent "pgpr_vector")
+                nil [3075 3295])
+            ("release" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "pgpr_vector")
+                nil [3296 3390])
+            ("pgpr_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "pgpr_vector"
+                :destructor-flag t)
+                nil [3392 3476])
+            ("pgpr_matrix" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [3611 3619])
+                    ("nn" variable (:type "int") (reparse-symbol classsubparts) [3622 3629])
+                    ("mm" variable (:type "int") (reparse-symbol classsubparts) [3632 3639])
+                    ("v" variable
+                       (:pointer 2
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3642 3648])
+                    ("public" label nil (reparse-symbol classsubparts) [3649 3656])
+                    ("pgpr_matrix" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("pgpr_matrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3659 3673])
+                    ("pgpr_matrix" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3688 3694])
+                            ("m" variable (:type "int") (reparse-symbol arg-sub-list) [3695 3701])
+                            ("r_start" variable (:type "int") (reparse-symbol arg-sub-list) [3702 3714])
+                            ("c_start" variable (:type "int") (reparse-symbol arg-sub-list) [3715 3727])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("pgpr_matrix" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3729 3746]))                          
+                        :type ("pgpr_matrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3676 3747])
+                    ("pgpr_matrix" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3762 3768])
+                            ("m" variable (:type "int") (reparse-symbol arg-sub-list) [3769 3775]))                          
+                        :type ("pgpr_matrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3750 3776])
+                    ("pgpr_matrix" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3814 3820])
+                            ("m" variable (:type "int") (reparse-symbol arg-sub-list) [3821 3827])
+                            ("a" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3828 3838]))                          
+                        :type ("pgpr_matrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3802 3839])
+                    ("pgpr_matrix" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pgpr_matrix" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3880 3903]))                          
+                        :type ("pgpr_matrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3868 3904])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pgpr_matrix" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3952 3975]))                          
+                        :type ("pgpr_matrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3928 3976])
+                    ("value_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3992 4013])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4068 4080]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4047 4081])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :arguments 
+                          ( ("i" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4144 4156]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4117 4163])
+                    ("nrows" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4166 4191])
+                    ("ncols" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4194 4219])
+                    ("resize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("newn" variable (:type "int") (reparse-symbol arg-sub-list) [4234 4243])
+                            ("newm" variable (:type "int") (reparse-symbol arg-sub-list) [4244 4253]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4222 4254])
+                    ("assign" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("newn" variable (:type "int") (reparse-symbol arg-sub-list) [4304 4313])
+                            ("newm" variable (:type "int") (reparse-symbol arg-sub-list) [4314 4323])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4324 4335]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4292 4336])
+                    ("release" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4377 4392])
+                    ("pgpr_matrix" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4395 4410]))                  )
+                nil [3572 4414])
+            ("pgpr_matrix" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_matrix" type (:type "class") nil nil)
+                :parent "pgpr_matrix"
+                :constructor-flag t)
+                nil [4416 4491])
+            ("pgpr_matrix" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_matrix" type (:type "class") nil nil)
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4540 4546])
+                    ("m" variable (:type "int") (reparse-symbol arg-sub-list) [4547 4553]))                  
+                :parent "pgpr_matrix"
+                :constructor-flag t)
+                nil [4493 4715])
+            ("pgpr_matrix" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_matrix" type (:type "class") nil nil)
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4763 4769])
+                    ("m" variable (:type "int") (reparse-symbol arg-sub-list) [4770 4776])
+                    ("a" variable
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4777 4787]))                  
+                :parent "pgpr_matrix"
+                :constructor-flag t)
+                nil [4716 5015])
+            ("pgpr_matrix" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_matrix" type (:type "class") nil nil)
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5063 5069])
+                    ("m" variable (:type "int") (reparse-symbol arg-sub-list) [5069 5075])
+                    ("r_start" variable (:type "int") (reparse-symbol arg-sub-list) [5076 5088])
+                    ("c_start" variable (:type "int") (reparse-symbol arg-sub-list) [5089 5101])
+                    ("ori" variable
+                       (:reference 1
+                        :type ("pgpr_matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5103 5124]))                  
+                :parent "pgpr_matrix"
+                :constructor-flag t)
+                nil [5016 5256])
+            ("pgpr_matrix" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_matrix" type (:type "class") nil nil)
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pgpr_matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5307 5330]))                  
+                :parent "pgpr_matrix"
+                :constructor-flag t)
+                nil [5260 5584])
+            ("=" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pgpr_matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5648 5674]))                  
+                :parent "pgpr_matrix"
+                :operator-flag t)
+                nil [5586 6302])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6360 6372]))                  
+                :typemodifiers ("inline")
+                :parent "pgpr_matrix"
+                :pointer 1
+                :operator-flag t)
+                nil [6304 6532])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6596 6608]))                  
+                :constant-flag t
+                :typemodifiers ("inline")
+                :parent "pgpr_matrix"
+                :pointer 1
+                :operator-flag t)
+                nil [6534 6741])
+            ("nrows" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :typemodifiers ("inline")
+                :parent "pgpr_matrix")
+                nil [6743 6819])
+            ("ncols" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :typemodifiers ("inline")
+                :parent "pgpr_matrix")
+                nil [6821 6897])
+            ("resize" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("newn" variable (:type "int") (reparse-symbol arg-sub-list) [6946 6955])
+                    ("newm" variable (:type "int") (reparse-symbol arg-sub-list) [6956 6965]))                  
+                :parent "pgpr_matrix")
+                nil [6899 7274])
+            ("assign" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("newn" variable (:type "int") (reparse-symbol arg-sub-list) [7323 7332])
+                    ("newm" variable (:type "int") (reparse-symbol arg-sub-list) [7333 7342])
+                    ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7343 7354]))                  
+                :parent "pgpr_matrix")
+                nil [7276 7731])
+            ("release" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "pgpr_matrix")
+                nil [7732 7856])
+            ("pgpr_matrix" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "pgpr_matrix"
+                :destructor-flag t)
+                nil [7857 7972])
+            ("Int" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [8041 8057])
+            ("Uint" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [8076 8102])
+            ("Llong" variable (:type "long int") nil [8213 8228])
+            ("Ullong" variable (:type "long int") nil [8269 8285])
+            ("Char" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [8294 8312])
+            ("Uchar" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [8330 8358])
+            ("Doub" type
+               (:typedef ("double")
+                :type "typedef")
+                nil [8360 8380])
+            ("Ldoub" type
+               (:typedef ("long double")
+                :type "typedef")
+                nil [8406 8432])
+            ("Bool" type
+               (:typedef ("bool")
+                :type "typedef")
+                nil [8434 8452])
+            ("NaN" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "numeric_limits<Doub>::quiet_NaN()"
+                :type ("Doub" type (:type "class") nil nil))
+                nil [8584 8642])
+            ("Vbool_I" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8771 8811])
+            ("Vbool_IO" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8812 8863])
+            ("Vbool_O" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8812 8863])
+            ("Vbool" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8812 8863])
+            ("Vint_I" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8865 8903])
+            ("Vint_IO" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8904 8951])
+            ("Vint_O" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8904 8951])
+            ("Vint" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8904 8951])
+            ("Vuint_I" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Uint" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8953 8993])
+            ("Vuint_IO" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Uint" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8994 9045])
+            ("Vuint_O" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Uint" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8994 9045])
+            ("Vuint" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Uint" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [8994 9045])
+            ("Vdoub_I" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Doub" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9047 9087])
+            ("Vdoub_IO" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Doub" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9088 9139])
+            ("Vdoub_O" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Doub" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9088 9139])
+            ("Vdoub" type
+               (:typedef ("pgpr_vector" type
+                     (:template-specifier 
+                        ( ("Doub" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9088 9139])
+            ("Mint_I" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9158 9196])
+            ("Mint_IO" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9197 9244])
+            ("Mint_O" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9197 9244])
+            ("Mint" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9197 9244])
+            ("Muint_I" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Uint" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9246 9286])
+            ("Muint_IO" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Uint" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9287 9338])
+            ("Muint_O" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Uint" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9287 9338])
+            ("Muint" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Uint" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9287 9338])
+            ("Mdoub_I" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Doub" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9340 9380])
+            ("Mdoub_IO" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Doub" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9381 9432])
+            ("Mdoub_O" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Doub" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9381 9432])
+            ("Mdoub" type
+               (:typedef ("pgpr_matrix" type
+                     (:template-specifier 
+                        ( ("Doub" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [9381 9432]))          
+      :file "pgpr_type.h"
+      :pointmax 9457
+      :fsize 9860
+      :lastmodtime '(21565 62272 0 0)
+      :unmatched-syntax '((thing 809 . 817) (thing 8200 . 8207) (thing 8208 . 8212) (thing 8247 . 8254) (thing 8255 . 8263) (thing 8264 . 8268))
+      :lexical-table 
+        '(("FAIL" . ((punctuation "-" 583 . 584) (number "1" 584 . 585)))
+          ("TRUE" . ((number "1" 615 . 616)))
+          ("FALSE" . ((number "0" 600 . 601)))
+          ("_PGPR_TYPE_H_")
+          ("SUCC" . ((number "0" 568 . 569)))
+          )
+)
+    (semanticdb-table "pgpr_chol.h"
+      :file "pgpr_chol.h"
+      :fsize 4787
+      :lastmodtime '(21565 62272 0 0))
+    (semanticdb-table "pgpr_cov.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_PGPR_COV_H_" variable (:constant-flag t) nil [30 42])
+            ("pgpr_util.h" include nil nil [43 65])
+            ("pgpr_cov" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [83 90])
+                    ("nos" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [93 102])
+                    ("lsc" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105 115])
+                    ("sig" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [118 127])
+                    ("mu" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [130 138])
+                    ("dim" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [141 149])
+                    ("pgpr_cov" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("hypf" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [162 174]))                          
+                        :type ("pgpr_cov" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [153 654])
+                    ("pgpr_cov" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("h" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [667 675])
+                            ("d" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 682]))                          
+                        :type ("pgpr_cov" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [658 895])
+                    ("se_ard_n" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:pointer 1
+                                :type ("Doub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [920 928])
+                            ("y" variable
+                               (:pointer 1
+                                :type ("Doub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [929 937]))                          
+                        :type ("Doub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [899 1086])
+                    ("se_ard" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:pointer 1
+                                :type ("Doub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1110 1118])
+                            ("y" variable
+                               (:pointer 1
+                                :type ("Doub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1119 1127]))                          
+                        :type ("Doub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1091 1270])
+                    ("se_ard_s" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("a" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1295 1303])
+                            ("ss" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1304 1311])
+                            ("k" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1312 1321]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1274 1610])
+                    ("se_ard_n" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("a" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1635 1643])
+                            ("ss" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1644 1651])
+                            ("k" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1652 1661]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1614 1953])
+                    ("se_ard" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("a" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1976 1984])
+                            ("ss" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1985 1992])
+                            ("k" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1993 2002]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1957 2253])
+                    ("se_ard" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("a" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2285 2293])
+                            ("ssa" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2294 2302])
+                            ("b" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2303 2311])
+                            ("ssb" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2312 2320])
+                            ("k" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2321 2330]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2266 2488]))                  
+                :type "class")
+                nil [66 2491]))          
+      :file "pgpr_cov.h"
+      :pointmax 2499
+      :fsize 2498
+      :lastmodtime '(21565 62272 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_PGPR_COV_H_")
+          )
+)
+    (semanticdb-table "parallel.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PARALLEL_INTERFACE_H__" variable (:constant-flag t) nil [600 622])
+            ("mpi.h" include nil nil [672 688])
+            ("MPI_func" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [749 756])
+                    ("Init" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [922 933])
+                            ("argv" variable
+                               (:pointer 3
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [934 948]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [905 971])
+                    ("Barrier" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [977 1029])
+                    ("global2Local" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1057 1061])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1061 1065]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1033 1066])
+                    ("GetProcID" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1069 1094])
+                    ("GetNumProcs" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1100 1127])
+                    ("IsLocal" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("blks" variable (:type "int") (reparse-symbol arg-sub-list) [1153 1162])
+                            ("blk_index" variable (:type "int") (reparse-symbol arg-sub-list) [1163 1177]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1133 1178])
+                    ("GetFirstVirMachineID" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("numVirMachines" variable (:type "int") (reparse-symbol arg-sub-list) [1217 1236]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1184 1237])
+                    ("GetFirstVirMachineID" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("curMachine" variable (:type "int") (reparse-symbol arg-sub-list) [1273 1288])
+                            ("numVirMachines" variable (:type "int") (reparse-symbol arg-sub-list) [1289 1308]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1240 1309])
+                    ("GetLocalNumSamples" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("numVirMachines" variable (:type "int") (reparse-symbol arg-sub-list) [1344 1363])
+                            ("bandwidth" variable (:type "int") (reparse-symbol arg-sub-list) [1364 1378])
+                            ("blocksize" variable (:type "int") (reparse-symbol arg-sub-list) [1379 1393]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1313 1394])
+                    ("GetLocalNumBlks" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("myid" variable (:type "int") (reparse-symbol arg-sub-list) [1425 1434])
+                            ("numVirMachines" variable (:type "int") (reparse-symbol arg-sub-list) [1435 1454])
+                            ("bandwidth" variable (:type "int") (reparse-symbol arg-sub-list) [1455 1469]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1397 1470])
+                    ("GetLocalNumVirMachines" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("numVirMachines" variable (:type "int") (reparse-symbol arg-sub-list) [1508 1527])
+                            ("bandwidth" variable (:type "int") (reparse-symbol arg-sub-list) [1528 1542]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1473 1543])
+                    ("GetLocalNumVirMachines" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("myid" variable (:type "int") (reparse-symbol arg-sub-list) [1581 1590])
+                            ("numVirMachines" variable (:type "int") (reparse-symbol arg-sub-list) [1591 1610])
+                            ("bandwidth" variable (:type "int") (reparse-symbol arg-sub-list) [1611 1625]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1546 1626]))                  
+                :type "class")
+                nil [731 1632]))          
+      :file "parallel.h"
+      :pointmax 1641
+      :fsize 1640
+      :lastmodtime '(21565 62272 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PARALLEL_INTERFACE_H__")
+          )
+)
+    (semanticdb-table "pgpr_util.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_PGPR_UTIL_H_" variable (:constant-flag t) nil [305 318])
+            ("sys/time.h" include (:system-flag t) nil [319 340])
+            ("time.h" include (:system-flag t) nil [341 358])
+            ("mach/clock.h" include (:system-flag t) nil [375 398])
+            ("mach/mach.h" include (:system-flag t) nil [399 421])
+            ("pgpr_type.h" include nil nil [429 451])
+            ("pgpr_chol.h" include nil nil [452 474])
+            ("LEV_PRG" variable (:constant-flag t) nil [484 491])
+            ("LEV_DBG" variable (:constant-flag t) nil [502 509])
+            ("LEV_ALL" variable (:constant-flag t) nil [520 527])
+            ("CURLEV" variable (:constant-flag t) nil [539 545])
+            ("SQR" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [618 628]))                  
+                :typemodifiers ("inline"))
+                nil [587 648])
+            ("MAX" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [688 699])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [700 711]))                  
+                :constant-flag t
+                :typemodifiers ("inline"))
+                nil [650 743])
+            ("MAX" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [762 778])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [779 794]))                  
+                :type "float")
+                nil [745 831])
+            ("MAX" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [850 865])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [866 882]))                  
+                :type "float")
+                nil [833 919])
+            ("MIN" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [959 970])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [971 982]))                  
+                :constant-flag t
+                :typemodifiers ("inline"))
+                nil [921 1014])
+            ("MIN" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1033 1049])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1050 1065]))                  
+                :type "float")
+                nil [1016 1102])
+            ("MIN" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1121 1136])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1137 1153]))                  
+                :type "float")
+                nil [1104 1190])
+            ("SIGN" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1224 1235])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1236 1247]))                  
+                :typemodifiers ("inline"))
+                nil [1192 1308])
+            ("SIGN" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1328 1343])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1344 1360]))                  
+                :type "float")
+                nil [1310 1421])
+            ("SIGN" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1441 1457])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1458 1473]))                  
+                :type "float")
+                nil [1423 1543])
+            ("SWAP" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1580 1585])
+                    ("b" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1586 1591]))                  
+                :typemodifiers ("inline"))
+                nil [1545 1628])
+            ("RANI" variable (:constant-flag t) nil [1638 1642])
+            ("SRAND" variable (:constant-flag t) nil [1686 1691])
+            ("LOG" variable (:constant-flag t) nil [1720 1723])
+            ("SQRT" variable (:constant-flag t) nil [1742 1746])
+            ("EXP" variable (:constant-flag t) nil [1766 1769])
+            ("POW" variable (:constant-flag t) nil [1788 1791])
+            ("takeSamp" variable (:constant-flag t) nil [1836 1844])
+            ("getLines" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1923 1935]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [1903 2120])
+            ("saveData" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2142 2154])
+                    ("m_data" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2155 2168]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [2122 2563])
+            ("loadData" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2585 2597])
+                    ("m_data" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2598 2612]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [2565 3097])
+            ("saveHyper" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3120 3132])
+                    ("h" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3133 3141])
+                    ("d" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3142 3148]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [3099 3707])
+            ("pmsg" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [3816 3826])
+                    ("outfp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3827 3839])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3840 3859])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3860 3864]))                  
+                :type "void")
+                nil [3799 3995])
+            ("pcp" variable (:constant-flag t) nil [4109 4112])
+            ("pcpst" variable (:constant-flag t) nil [4166 4171])
+            ("pcpen" variable (:constant-flag t) nil [4222 4227])
+            ("pcp_s" variable (:constant-flag t) nil [4277 4282])
+            ("pvec" variable (:constant-flag t) nil [4346 4350])
+            ("pvec_r" variable (:constant-flag t) nil [4506 4512])
+            ("pvec_s" variable (:constant-flag t) nil [4670 4676])
+            ("pmat_r" variable (:constant-flag t) nil [4874 4880])
+            ("pmat_pos" variable (:constant-flag t) nil [5103 5111])
+            ("pmat" variable (:constant-flag t) nil [5388 5392])
+            ("pmat_s" variable (:constant-flag t) nil [5630 5636])
+            ("throw" variable (:constant-flag t) nil [6151 6156])
+            ("bubble_sort" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6664 6672])
+                    ("ai" variable
+                       (:reference 1
+                        :type ("Vint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6673 6682]))                  
+                :type "void")
+                nil [6640 6984])
+            ("argmaxi" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("v" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7022 7030]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [7003 7396])
+            ("getRmse" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("v1" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7462 7471])
+                    ("v2" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7472 7481]))                  
+                :type ("Doub" type (:type "class") nil nil))
+                nil [7442 7733])
+            ("getMnlp" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("v1" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7806 7815])
+                    ("v2" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7816 7825])
+                    ("v3" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7826 7835]))                  
+                :type ("Doub" type (:type "class") nil nil))
+                nil [7786 8164])
+            ("A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8261 8269])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8270 8288])
+                    ("C" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8289 8297])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8298 8307]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [8241 8536])
+            ("A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8633 8641])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8642 8660])
+                    ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8661 8669])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8670 8679]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [8613 9075])
+            ("A_invB_AT" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9155 9163])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9164 9182])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9183 9192]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [9134 9567])
+            ("A_invB_transC" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9671 9679])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9680 9698])
+                    ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9699 9707])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9708 9717]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [9646 10113])
+            ("A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10193 10201])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10202 10220])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10221 10230]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [10173 10769])
+            ("trace_A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10878 10886])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10887 10905])
+                    ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10906 10914])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10915 10924]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [10852 11293])
+            ("trace_A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11385 11393])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11394 11412])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11413 11422]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [11359 11758])
+            ("trace_A_invB_transC" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11874 11882])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11883 11901])
+                    ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11902 11910])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11911 11920]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [11843 12363])
+            ("pgpr_cpu_timer" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [12548 12556])
+                    ("st" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12559 12570])
+                    ("en" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12573 12584])
+                    ("elapsed" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12587 12600])
+                    ("public" label nil (reparse-symbol classsubparts) [12602 12609])
+                    ("start" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [12612 12654])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type ("Doub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12657 12770]))                  
+                :type "class")
+                nil [12524 12773])
+            ("pgpr_timer" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [12793 12801])
+                    ("st" variable (:type ("timespec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12804 12816])
+                    ("en" variable (:type ("timespec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12819 12831])
+                    ("elapsed" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12834 12847])
+                    ("public" label nil (reparse-symbol classsubparts) [12848 12855])
+                    ("pgpr_timer" function
+                       (:constructor-flag t
+                        :type ("pgpr_timer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12881 12916])
+                    ("start" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [12945 13364])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type ("Doub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13458 13931]))                  
+                :type "class")
+                nil [12774 13934]))          
+      :file "pgpr_util.h"
+      :pointmax 13943
+      :fsize 13942
+      :lastmodtime '(21601 40264 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_PGPR_UTIL_H_")
+          ("pcp" (spp-arg-list ("x") 4112 . 4115) . ((symbol "pmsg" 4116 . 4120) (semantic-list "(LEV_DBG,stdout,\"CheckPoint> %d\\n\",x)" 4120 . 4157)))
+          ("LEV_ALL" . ((number "10" 528 . 530)))
+          ("pmat_r" (spp-arg-list ("mat" "_r") 4880 . 4888) . 
+              ((FOR "for" 4894 . 4897) (semantic-list "(Int _i=0; _i<_r; _i++)" 4897 . 4920) (semantic-list "{\\
+        for(Int _j=0; _j<_r; _j++)\\
+        {\\
+            pmsg(LEV_DBG,stdout,\"%.4f \",(double)mat[_i][_j]);\\
+        }\\
+        pmsg(LEV_DBG,stdout,\"\\n\");\\
+    }" 4926 . 5091)))
+          ("EXP" (spp-arg-list ("x") 1769 . 1772) . ((symbol "exp" 1773 . 1776) (semantic-list "(x)" 1776 . 1779)))
+          ("pvec" (spp-arg-list ("vec") 4350 . 4355) . 
+              ((FOR "for" 4361 . 4364) (semantic-list "(Int _j=0; _j<vec.size(); _j++)" 4364 . 4395) (semantic-list "{\\
+        pmsg(LEV_DBG,stdout,\"%.4f \",(double)vec[_j]);\\
+    }" 4401 . 4464) (symbol "pmsg" 4470 . 4474) (semantic-list "(LEV_DBG,stdout,\"\\n\")" 4474 . 4495) (punctuation ";" 4495 . 4496)))
+          ("pmat_s" (spp-arg-list ("_s" "mat") 5636 . 5644) . 
+              ((symbol "pmsg" 5650 . 5654) (semantic-list "(LEV_DBG,stdout,\"%s:\\n\",_s)" 5654 . 5681) (punctuation ";" 5681 . 5682) (FOR "for" 5688 . 5691) (semantic-list "(Int _i=0; _i<mat.nrows(); _i++)" 5691 . 5723) (semantic-list "{\\
+        for(Int _j=0; _j<mat.ncols(); _j++)\\
+        {\\
+            pmsg(LEV_DBG,stdout,\"%.4f \",(double)mat[_i][_j]);\\
+        }\\
+        pmsg(LEV_DBG,stdout,\"\\n\");\\
+    }" 5729 . 5903)))
+          ("LOG" (spp-arg-list ("x") 1723 . 1726) . ((symbol "log" 1727 . 1730) (semantic-list "(x)" 1730 . 1733)))
+          ("POW" (spp-arg-list ("x" "y") 1791 . 1796) . 
+              ((semantic-list "(Int)" 1797 . 1802) (symbol "pow" 1802 . 1805) (semantic-list "((Doub)(x),(Doub)(y))" 1805 . 1826)))
+          ("pmat" (spp-arg-list ("mat") 5392 . 5397) . 
+              ((FOR "for" 5403 . 5406) (semantic-list "(Int _i=0; _i<mat.nrows(); _i++)" 5406 . 5438) (semantic-list "{\\
+        for(Int _j=0; _j<mat.ncols(); _j++)\\
+        {\\
+            pmsg(LEV_DBG,stdout,\"%.4f \",(double)mat[_i][_j]);\\
+        }\\
+        pmsg(LEV_DBG,stdout,\"\\n\");\\
+    }" 5444 . 5618)))
+          ("CURLEV" . ((symbol "LEV_DBG" 546 . 553)))
+          ("pcpst" (spp-arg-list ("x") 4171 . 4174) . ((symbol "pmsg" 4175 . 4179) (semantic-list "(LEV_DBG,stdout,\"[%d] start>\\n\",x)" 4179 . 4213)))
+          ("pmat_pos" (spp-arg-list ("mat") 5111 . 5116) . 
+              ((FOR "for" 5122 . 5125) (semantic-list "(Int _i=0; _i<mat.nrows(); _i++)" 5125 . 5157) (semantic-list "{\\
+        for(Int _j=0; _j<mat.ncols(); _j++)\\
+        {\\
+            if(mat[_i][_j]<0) break;\\
+            pmsg(LEV_DBG,stdout,\"%.4f \",(double)mat[_i][_j]);\\
+        }\\
+        pmsg(LEV_DBG,stdout,\"\\n\");\\
+    }" 5163 . 5375)))
+          ("throw" (spp-arg-list ("message") 6156 . 6165) . ((semantic-list "{printf(\"ERROR: %s\\n     in file %s at line %d\\n\", message,__FILE__,__LINE__); throw(1);}" 6168 . 6257)))
+          ("LEV_PRG" . ((number "0" 492 . 493)))
+          ("LEV_DBG" . ((number "5" 510 . 511)))
+          ("SRAND" (spp-arg-list ("x") 1691 . 1694) . 
+              ((symbol "srand" 1695 . 1700) (semantic-list "(x)" 1700 . 1703) (punctuation ";" 1703 . 1704) (symbol "rand" 1705 . 1709) (semantic-list "()" 1709 . 1711)))
+          ("pcpen" (spp-arg-list ("x") 4227 . 4230) . ((symbol "pmsg" 4231 . 4235) (semantic-list "(LEV_DBG,stdout,\"[%d] end# \\n\",x)" 4235 . 4268)))
+          ("pcp_s" (spp-arg-list ("s" "x") 4282 . 4287) . ((symbol "pmsg" 4288 . 4292) (semantic-list "(LEV_DBG,stdout,\" %s > %.4lf\\n\",s,(double)x)" 4292 . 4336)))
+          ("pvec_r" (spp-arg-list ("vec" "vsize") 4512 . 4523) . 
+              ((FOR "for" 4529 . 4532) (semantic-list "(Int _j=0; _j<vsize; _j++)" 4532 . 4558) (semantic-list "{\\
+        pmsg(LEV_DBG,stdout,\"%.4f \",(double)vec[_j]);\\
+    }" 4564 . 4627) (symbol "pmsg" 4633 . 4637) (semantic-list "(LEV_DBG,stdout,\"\\n\")" 4637 . 4658) (punctuation ";" 4658 . 4659)))
+          ("SQRT" (spp-arg-list ("x") 1746 . 1749) . ((symbol "sqrt" 1750 . 1754) (semantic-list "(x)" 1754 . 1757)))
+          ("pvec_s" (spp-arg-list ("_s" "vec") 4676 . 4684) . 
+              ((symbol "pmsg" 4690 . 4694) (semantic-list "(LEV_DBG,stdout,\"%s:\\n\",_s)" 4694 . 4721) (punctuation ";" 4721 . 4722) (FOR "for" 4728 . 4731) (semantic-list "(Int _j=0; _j<vec.size(); _j++)" 4731 . 4762) (semantic-list "{\\
+        pmsg(LEV_DBG,stdout,\"%.4f \",(double)vec[_j]);\\
+    }" 4768 . 4831) (symbol "pmsg" 4837 . 4841) (semantic-list "(LEV_DBG,stdout,\"\\n\")" 4841 . 4862) (punctuation ";" 4862 . 4863)))
+          ("RANI" (spp-arg-list ("x") 1642 . 1645) . ((semantic-list "(Int)" 1646 . 1651) (semantic-list "((Doub)rand()/RAND_MAX*x)" 1651 . 1676)))
+          ("takeSamp" (spp-arg-list ("a" "b" "d") 1844 . 1851) . 
+              ((FOR "for" 1852 . 1855) (semantic-list "(int _i=0; _i<d; _i++)" 1855 . 1877) (symbol "b" 1878 . 1879) (semantic-list "[_i]" 1879 . 1883) (punctuation "=" 1883 . 1884) (symbol "a" 1884 . 1885) (semantic-list "[_i]" 1885 . 1889)))
+          )
+)
+    (semanticdb-table "pgpr_slma.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PGPR_SLMA_H_" variable (:constant-flag t) nil [383 395])
+            ("mpi.h" include nil nil [396 412])
+            ("pgpr_type.h" include nil nil [413 435])
+            ("pgpr_chol.h" include nil nil [462 484])
+            ("pgpr_cov.h" include nil nil [485 506])
+            ("parallel.h" include nil nil [507 528])
+            ("vector" include (:system-flag t) nil [529 546])
+            ("DEBUG" variable (:constant-flag t) nil [555 560])
+            ("min" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [594 600])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [600 606]))                  
+                :type "int")
+                nil [578 629])
+            ("pgpr_svap" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [932 940])
+                    ("cov" variable
+                       (:pointer 1
+                        :type ("pgpr_cov" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [942 957])
+                    ("localTrainSamples" variable
+                       (:pointer 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1040 1065])
+                    ("supportSamples" variable
+                       (:pointer 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1067 1089])
+                    ("globalTestSamples" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vdoub" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1091 1124])
+                    ("blocksize" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1126 1140])
+                    ("bandwidth" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1142 1156])
+                    ("numVirMachines" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1158 1177])
+                    ("localNumVirMachines" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1179 1203])
+                    ("localNumSamples" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1256 1276])
+                    ("firstVirMachineID" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1339 1361])
+                    ("h_mu" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1363 1373])
+                    ("rmse" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1375 1385])
+                    ("mnlp" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1387 1397])
+                    ("pmu" variable
+                       (:pointer 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1399 1410])
+                    ("pvar" variable
+                       (:pointer 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1412 1424])
+                    ("trueval" variable
+                       (:pointer 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1426 1441])
+                    ("elapsed" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1443 1456])
+                    ("myid" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1458 1467])
+                    ("public" label nil (reparse-symbol classsubparts) [1495 1502])
+                    ("pgpr_svap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("hypf" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1514 1526]))                          
+                        :type ("pgpr_svap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1504 1761])
+                    ("pgpr_svap" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1766 2068])
+                    ("loadSupportSample" function
+                       (:arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2094 2106]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2071 2688])
+                    ("loadTestSample" function
+                       (:arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2768 2779]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2749 3541])
+                    ("svap_cluster" function
+                       (:arguments 
+                          ( ("sample" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3561 3581]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3544 4453])
+                    ("loadLocalTrainSample" function
+                       (:arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4482 4493]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4456 6245])
+                    ("trans" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6261 6277])
+                            ("b" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6277 6286]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6250 6423])
+                    ("calcCovElement" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [6512 6522])
+                            ("b" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [6523 6533])
+                            ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [6533 6541]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [6490 6684])
+                    ("calcCovElement" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [6711 6721])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6722 6737])
+                            ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [6738 6746]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [6689 6888])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6972 6982])
+                            ("d2" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6983 6993])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6994 7003]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6959 7288])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7388 7398])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7398 7407]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7375 7745])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7762 7772])
+                            ("d2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Vdoub" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7772 7796])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7797 7806]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7749 8086])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8102 8112])
+                            ("blk" variable (:type "int") (reparse-symbol arg-sub-list) [8112 8120])
+                            ("d2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Vdoub" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8120 8144])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8145 8154]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8089 8466])
+                    ("calcCov" function
+                       (:arguments 
+                          ( ("d1" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8481 8491])
+                            ("start_idx1" variable (:type "int") (reparse-symbol arg-sub-list) [8492 8507])
+                            ("length1" variable (:type "int") (reparse-symbol arg-sub-list) [8508 8520])
+                            ("d2" variable
+                               (:pointer 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8521 8531])
+                            ("start_idx2" variable (:type "int") (reparse-symbol arg-sub-list) [8532 8547])
+                            ("length2" variable (:type "int") (reparse-symbol arg-sub-list) [8549 8561])
+                            ("r" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8562 8571]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8468 8871])
+                    ("A_invB_C" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8970 8978])
+                            ("chol_b" variable
+                               (:pointer 1
+                                :type ("pgpr_chol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8979 8997])
+                            ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8998 9006])
+                            ("D" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9007 9016]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8950 9428])
+                    ("A_invB_AT2" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10122 10130])
+                            ("chol_b" variable
+                               (:pointer 1
+                                :type ("pgpr_chol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10131 10149])
+                            ("D" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10150 10159]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10100 10522])
+                    ("A_invB_AT" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10567 10576])
+                            ("chol_b" variable
+                               (:pointer 1
+                                :type ("pgpr_chol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10576 10595])
+                            ("D" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10596 10605]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10553 11171])
+                    ("diagA_invB_AT" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11217 11226])
+                            ("chol_b" variable
+                               (:pointer 1
+                                :type ("pgpr_chol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11226 11245])
+                            ("D" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11246 11255]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11199 11614])
+                    ("multiply" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11698 11714])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11715 11731])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11732 11742]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11684 12430])
+                    ("ATtimesB" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12463 12478])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12479 12494])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12495 12504]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12449 12558])
+                    ("diagATtimesA" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12595 12610])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12611 12620]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12577 12925])
+                    ("AtimesAT" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12964 12979])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12980 12989]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12950 13473])
+                    ("selfSub" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13488 13497])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13497 13512]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13475 13817])
+                    ("subtracts" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13835 13844])
+                            ("B" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13846 13856])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13857 13867]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13819 14233])
+                    ("subtract" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14250 14259])
+                            ("B" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14261 14271])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14272 14282]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14235 14474])
+                    ("subtract" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14492 14501])
+                            ("B" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14503 14513])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14514 14524]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14477 14845])
+                    ("selfAddition" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14868 14877])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14878 14893]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14849 15180])
+                    ("selfAddition" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15201 15210])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15211 15226]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15182 15382])
+                    ("addition" function
+                       (:arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15398 15414])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15415 15430])
+                            ("C" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15431 15441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15384 15749])
+                    ("getCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [15770 15786])
+                            ("start_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [15787 15803])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [15804 15818])
+                            ("end_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [15819 15833])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15833 15844])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15845 15857]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15754 16272])
+                    ("getCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [16293 16309])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [16310 16324])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16325 16336])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16337 16349]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16277 16727])
+                    ("setCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [16747 16763])
+                            ("start_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [16764 16780])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [16781 16795])
+                            ("end_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [16796 16810])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16810 16821])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16822 16834]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16731 17219])
+                    ("printarray" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [17240 17247])
+                            ("size" variable (:type "int") (reparse-symbol arg-sub-list) [17247 17256]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17224 17348])
+                    ("print" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [17361 17376]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17350 17474])
+                    ("setCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [17493 17509])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [17510 17524])
+                            ("ori" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17525 17536])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17537 17549]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17477 17892])
+                    ("setCovBlks" function
+                       (:arguments 
+                          ( ("start_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [17916 17932])
+                            ("start_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [17933 17949])
+                            ("end_blk_r" variable (:type "int") (reparse-symbol arg-sub-list) [17950 17964])
+                            ("end_blk_c" variable (:type "int") (reparse-symbol arg-sub-list) [17965 17979])
+                            ("ori" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [17979 17992])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17993 18005]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17900 18413])
+                    ("addNoise" function
+                       (:arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18429 18438]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18415 18502])
+                    ("isElement" function
+                       (:arguments 
+                          ( ("a" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [18522 18529])
+                            ("size" variable (:type "int") (reparse-symbol arg-sub-list) [18530 18539])
+                            ("element" variable (:type "int") (reparse-symbol arg-sub-list) [18540 18552]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [18507 18650])
+                    ("svap_regr" function (:type "void") (reparse-symbol classsubparts) [18653 56171])
+                    ("regress" function
+                       (:arguments 
+                          ( ("train" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56186 56198])
+                            ("test" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56199 56211])
+                            ("supset" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56212 56226])
+                            ("blksize" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56227 56239])
+                            ("band" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56240 56249])
+                            ("virmachines" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56250 56266]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [56174 57192])
+                    ("outputRst" function
+                       (:arguments 
+                          ( ("output" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [57212 57226]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [57197 57598]))                  
+                :type "class")
+                nil [914 57601]))          
+      :file "pgpr_slma.h"
+      :pointmax 57609
+      :fsize 57608
+      :lastmodtime '(21565 62272 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PGPR_SLMA_H_")
+          ("DEBUG" . ((number "1" 561 . 562)))
+          )
+))
+  :file "!Users!alfred!Documents!repo!lma!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

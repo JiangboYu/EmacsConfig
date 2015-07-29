@@ -1,0 +1,43 @@
+;; Object AAAI2015_bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AAAI2015_bin/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("HOME" variable (:default-value ("..")) nil [1 11])
+            ("DEMO_DIR" variable (:default-value (".")) nil [11 24])
+            ("SRC_DIR" variable (:default-value ("$(HOME)/src")) nil [24 46])
+            ("LIB_DIR" variable (:default-value ("$(HOME)/lib")) nil [46 68])
+            ("LIBS" variable (:default-value ("-lpthread")) nil [68 86])
+            ("INCS" variable (:default-value ("-I$(SRC_DIR)" "-I$(LIB_DIR)")) nil [86 120])
+            ("CC" variable (:default-value ("$(HOME)/mpi/bin/mpicxx")) nil [120 148])
+            ("CFLAGS" variable (:default-value ("-O3" "-D__x86_64__")) nil [148 174])
+            ("LDFLAGS" variable (:default-value ("-O3")) nil [210 229])
+            (".cc.o" function nil nil [313 349])
+            ("deps" function nil nil [350 356])
+            (".PHONY" function (:arguments ("all" "clean" "deps" "release" "debug" "echo" "doc")) nil [418 464])
+            ("all" function (:arguments ("fgp" "prep" "pic" "pitc" "ppitc" "ppic" "eigen")) nil [465 505])
+            ("eigen" function (:arguments ("deps" "$(OBJS)")) nil [505 610])
+            ("prep" function (:arguments ("deps" "$(OBJS)")) nil [610 714])
+            ("fgp" function (:arguments ("deps" "$(OBJS)")) nil [714 816])
+            ("pic" function (:arguments ("deps" "$(OBJS)")) nil [816 918])
+            ("pitc" function (:arguments ("deps" "$(OBJS)")) nil [918 1022])
+            ("ppic" function (:arguments ("deps" "$(OBJS)")) nil [1022 1126])
+            ("ppitc" function (:arguments ("deps" "$(OBJS)")) nil [1126 1232])
+            ("plma" function (:arguments ("deps" "$(OBJS)")) nil [1232 1336])
+            ("lma" function (:arguments ("deps" "$(OBJS)")) nil [1336 1438])
+            ("echo" function nil nil [1438 1582])
+            ("clean" function nil nil [1583 1704])
+            ("clog" function nil nil [1704 1730])
+            ("sty" function nil nil [1730 1852])
+            ("doc" function nil nil [1852 1925]))          
+      :file "Makefile"
+      :pointmax 1925
+      :fsize 1924
+      :lastmodtime '(21666 48227)
+      :unmatched-syntax '((thing 396 . 416) (thing 395 . 395) (thing 1898 . 1898) (thing 1899 . 1924))))
+  :file "!ssh:tembusu:!home!y!yujiang!lma_v1.0!AAAI2015_bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

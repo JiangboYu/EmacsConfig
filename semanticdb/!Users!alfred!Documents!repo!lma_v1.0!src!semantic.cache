@@ -1,0 +1,1112 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "pgpr_plma.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PGPR_PLMA_H_" variable (:constant-flag t) nil [383 395])
+            ("Eigen/Dense" include (:system-flag t) nil [396 418])
+            ("pgpr_parallel.h" include nil nil [419 445])
+            ("mpi.h" include nil nil [446 462])
+            ("pgpr_type.h" include nil nil [463 485])
+            ("pgpr_chol.h" include nil nil [486 508])
+            ("pgpr_cov.h" include nil nil [509 530])
+            ("vector" include (:system-flag t) nil [532 549])
+            ("Eigen" using (:type ("Eigen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [550 572])
+            ("pgpr_plma" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [721 729])
+                    ("parallel" variable (:type ("pgpr_parallel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [731 754])
+                    ("localTrainSamples" variable (:type ("MatrixXd" type (:type "class") nil nil)) (reparse-symbol classsubparts) [756 783])
+                    ("supportSamples" variable (:type ("MatrixXd" type (:type "class") nil nil)) (reparse-symbol classsubparts) [785 809])
+                    ("testClusters" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("VectorXd" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [811 842])
+                    ("cov" variable
+                       (:pointer 1
+                        :type ("pgpr_cov" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [844 858])
+                    ("blocksize" variable (:type "int") (reparse-symbol classsubparts) [860 874])
+                    ("globalBlocks" variable (:type "int") (reparse-symbol classsubparts) [876 893])
+                    ("bandwidth" variable (:type "int") (reparse-symbol classsubparts) [895 909])
+                    ("localband" variable (:type "int") (reparse-symbol classsubparts) [985 999])
+                    ("mean" variable (:type "double") (reparse-symbol classsubparts) [1001 1013])
+                    ("rmse" variable (:type "double") (reparse-symbol classsubparts) [1053 1065])
+                    ("mnlp" variable (:type "double") (reparse-symbol classsubparts) [1123 1135])
+                    ("pmu" variable (:type ("MatrixXd" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1164 1177])
+                    ("dim" variable (:type "int") (reparse-symbol classsubparts) [1240 1248])
+                    ("pvar" variable (:type ("MatrixXd" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1303 1317])
+                    ("trueval" variable (:type ("MatrixXd" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1383 1400])
+                    ("elapsed" variable (:type "double") (reparse-symbol classsubparts) [1435 1450])
+                    ("myid" variable (:type "int") (reparse-symbol classsubparts) [1493 1502])
+                    ("cluster" function
+                       (:arguments 
+                          ( ("test" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MatrixXd" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1891 1913]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1877 2735])
+                    ("public" label nil (reparse-symbol classsubparts) [2736 2743])
+                    ("pgpr_plma" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("hypf" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3169 3180])
+                            ("train" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3181 3193])
+                            ("test" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3194 3206])
+                            ("supset" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3207 3221])
+                            ("band" variable (:type "int") (reparse-symbol arg-sub-list) [3222 3231])
+                            ("blks" variable (:type "int") (reparse-symbol arg-sub-list) [3232 3241]))                          
+                        :type ("pgpr_plma" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3159 4674])
+                    ("pgpr_plma" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4677 4708])
+                    ("plma_regr" function (:type "void") (reparse-symbol classsubparts) [4912 19243])
+                    ("regress" function (:type "int") (reparse-symbol classsubparts) [19245 19515])
+                    ("outputRst" function
+                       (:arguments 
+                          ( ("output" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19534 19548]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19519 19917]))                  
+                :type "class")
+                nil [703 19920]))          
+      :file "pgpr_plma.h"
+      :pointmax 19928
+      :fsize 19927
+      :lastmodtime '(21666 12448 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PGPR_PLMA_H_")
+          )
+)
+    (semanticdb-table "pgpr_parallel.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PGPR_PARALLEL_H_" variable (:constant-flag t) nil [387 403])
+            ("Eigen/Dense" include (:system-flag t) nil [404 426])
+            ("mpi.h" include nil nil [427 443])
+            ("pgpr_type.h" include nil nil [444 466])
+            ("pgpr_chol.h" include nil nil [467 489])
+            ("pgpr_cov.h" include nil nil [490 511])
+            ("vector" include (:system-flag t) nil [512 529])
+            ("Eigen" using (:type ("Eigen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [530 552])
+            ("pgpr_parallel" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [690 698])
+                    ("rank" variable (:type "int") (reparse-symbol classsubparts) [700 709])
+                    ("public" label nil (reparse-symbol classsubparts) [710 717])
+                    ("pgpr_parallel" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [736 742]))                          
+                        :type ("pgpr_parallel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [722 752])
+                    ("setRank" function
+                       (:arguments 
+                          ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [767 773]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [754 785])
+                    ("send_msg" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil)
+                                          ("Dynamic" type nil nil nil)
+                                          ("Dynamic" type nil nil nil)
+                                          ("RowMajor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1017 1072])
+                            ("ori" variable (:type "int") (reparse-symbol arg-sub-list) [1073 1081])
+                            ("dest" variable (:type "int") (reparse-symbol arg-sub-list) [1082 1091]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1003 1581])
+                    ("send_msg" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MatrixXd" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1597 1617])
+                            ("ori" variable (:type "int") (reparse-symbol arg-sub-list) [1618 1626])
+                            ("dest" variable (:type "int") (reparse-symbol arg-sub-list) [1627 1636]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1583 2135])
+                    ("recv_msg" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :type ("MatrixXd" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2371 2385])
+                            ("ori" variable (:type "int") (reparse-symbol arg-sub-list) [2386 2394])
+                            ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [2395 2404]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2357 2832])
+                    ("MapReduce" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MatrixXd" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3137 3157])
+                            ("reduce" variable
+                               (:reference 1
+                                :type ("MatrixXd" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3158 3175])
+                            ("op" variable (:type ("MPI_Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3176 3186])
+                            ("dest" variable (:type "int") (reparse-symbol arg-sub-list) [3187 3196]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3122 3965])
+                    ("sync" function (:type "void") (reparse-symbol classsubparts) [4040 4086]))                  
+                :type "class")
+                nil [668 4089]))          
+      :file "pgpr_parallel.h"
+      :pointmax 4097
+      :fsize 4096
+      :lastmodtime '(21665 28190 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PGPR_PARALLEL_H_")
+          )
+)
+    (semanticdb-table "pgpr_type.h"
+      :file "pgpr_type.h"
+      :fsize 12148
+      :lastmodtime '(21657 9794 0 0))
+    (semanticdb-table "pgpr_chol.h"
+      :file "pgpr_chol.h"
+      :fsize 3611
+      :lastmodtime '(21654 37896 0 0))
+    (semanticdb-table "pgpr_cov.h"
+      :file "pgpr_cov.h"
+      :fsize 4528
+      :lastmodtime '(21665 28844 0 0))
+    (semanticdb-table "pgpr_data.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_PGPR_DATA_H_" variable (:constant-flag t) nil [293 306])
+            ("pgpr_type.h" include nil nil [307 329])
+            ("pgpr_util.h" include nil nil [330 352])
+            ("pgpr_parse.h" include nil nil [353 376])
+            ("pgpr_fgp.h" include nil nil [377 398])
+            ("ALGO1" variable (:constant-flag t) nil [407 412])
+            ("ALGO2" variable (:constant-flag t) nil [424 429])
+            ("s2i" variable (:constant-flag t) nil [511 514])
+            ("i2s" variable (:constant-flag t) nil [533 536])
+            ("t_state" type
+               (:members 
+                  ( ("v_st" variable (:type ("Vbool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [672 683])
+                    ("ss" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [736 743])
+                    ("t_state" function
+                       (:constructor-flag t
+                        :type ("t_state" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [749 776])
+                    ("t_state" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ds" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [857 864]))                          
+                        :type ("t_state" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [849 910])
+                    ("init" function
+                       (:arguments 
+                          ( ("ds" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1005 1012]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [995 1046])
+                    ("getSt" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1190 1196]))                          
+                        :type ("Bool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1172 1227])
+                    ("upSt" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1344 1350]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1327 1391]))                  
+                :type "struct")
+                nil [619 1395])
+            ("pgpr_domain" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1507 1515])
+                    ("attr" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1518 1529])
+                    ("ne" variable (:type ("Mint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1544 1552])
+                    ("deg" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1581 1589])
+                    ("public" label nil (reparse-symbol classsubparts) [1608 1615])
+                    ("dd" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1681 1688])
+                    ("ds" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1719 1726])
+                    ("pgpr_domain" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type ("Mint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1913 1920])
+                            ("a" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1921 1929]))                          
+                        :type ("pgpr_domain" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1901 1997])
+                    ("getDist" function
+                       (:arguments 
+                          ( ("ci" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2194 2201])
+                            ("cj" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2202 2209]))                          
+                        :type ("Doub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2181 2356])
+                    ("selRand" function
+                       (:arguments 
+                          ( ("st" variable
+                               (:pointer 1
+                                :type ("t_state" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2547 2559]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2535 2760])
+                    ("getAttr" function
+                       (:arguments 
+                          ( ("s" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2947 2953])
+                            ("a" variable
+                               (:pointer 1
+                                :type ("Doub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2954 2963]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2935 3020])
+                    ("getNeighbour" function
+                       (:arguments 
+                          ( ("s" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3322 3328])
+                            ("c" variable
+                               (:reference 1
+                                :type ("Vint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3329 3337]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3305 3517]))                  
+                :type "class")
+                nil [1487 3520])
+            ("pgpr_data" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [3667 3675])
+                    ("gst" variable
+                       (:pointer 1
+                        :type ("t_state" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3678 3691])
+                    ("gp" variable
+                       (:pointer 1
+                        :type ("pgpr_fgp" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3758 3771])
+                    ("blk_num" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3834 3846])
+                    ("samp_num" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3869 3882])
+                    ("logfp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3907 3919])
+                    ("public" label nil (reparse-symbol classsubparts) [3933 3940])
+                    ("domain" variable
+                       (:pointer 1
+                        :type ("pgpr_domain" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3968 3988])
+                    ("m_sample" variable (:type ("Mint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4037 4051])
+                    ("pgpr_data" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("cfg" variable (:type ("pgpr_parse" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4236 4251])
+                            ("an" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4252 4259])
+                            ("tn" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4260 4267]))                          
+                        :type ("pgpr_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4226 4733])
+                    ("getTestSet" function
+                       (:arguments 
+                          ( ("tsize" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4937 4947])
+                            ("test" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4948 4960]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4922 5229])
+                    ("getTrainSet" function
+                       (:arguments 
+                          ( ("mode" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5424 5433]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5408 5666])
+                    ("getRandomBlk" function (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6188 7119])
+                    ("getRandomWalk" function (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7453 8140])
+                    ("selMaxVar" function
+                       (:arguments 
+                          ( ("dset" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8419 8430])
+                            ("dnum" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8431 8440])
+                            ("anum" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8441 8450])
+                            ("aset" variable
+                               (:reference 1
+                                :type ("Mdoub" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8451 8463]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8405 9419]))                  
+                :type "class")
+                nil [3649 9423]))          
+      :file "pgpr_data.h"
+      :pointmax 9431
+      :fsize 9430
+      :lastmodtime '(21654 37896 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ALGO1" . ((number "1" 413 . 414)))
+          ("ALGO2" . ((number "2" 430 . 431)))
+          ("i2s" (spp-arg-list ("i") 536 . 539) . ((semantic-list "(i+1)" 540 . 545)))
+          ("_PGPR_DATA_H_")
+          ("s2i" (spp-arg-list ("s") 514 . 517) . ((semantic-list "(s-1)" 518 . 523)))
+          )
+)
+    (semanticdb-table "pgpr_util.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_PGPR_UTIL_H_" variable (:constant-flag t) nil [305 318])
+            ("sys/time.h" include (:system-flag t) nil [319 340])
+            ("mach/clock.h" include (:system-flag t) nil [357 380])
+            ("mach/mach.h" include (:system-flag t) nil [381 403])
+            ("Eigen/Dense" include (:system-flag t) nil [411 433])
+            ("pgpr_type.h" include nil nil [434 456])
+            ("pgpr_chol.h" include nil nil [458 480])
+            ("Eigen" using (:type ("Eigen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [481 503])
+            ("LEV_PRG" variable (:constant-flag t) nil [512 519])
+            ("LEV_DBG" variable (:constant-flag t) nil [530 537])
+            ("LEV_ALL" variable (:constant-flag t) nil [548 555])
+            ("CURLEV" variable (:constant-flag t) nil [567 573])
+            ("SQR" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [646 656]))                  
+                :typemodifiers ("inline"))
+                nil [615 676])
+            ("MAX" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [716 727])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [728 739]))                  
+                :constant-flag t
+                :typemodifiers ("inline"))
+                nil [678 771])
+            ("MAX" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [790 806])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [807 822]))                  
+                :type "float")
+                nil [773 859])
+            ("MAX" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [878 893])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [894 910]))                  
+                :type "float")
+                nil [861 947])
+            ("MIN" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [987 998])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [999 1010]))                  
+                :constant-flag t
+                :typemodifiers ("inline"))
+                nil [949 1042])
+            ("MIN" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1060 1076])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1077 1092]))                  
+                :type "float")
+                nil [1043 1129])
+            ("MIN" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1148 1163])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1164 1180]))                  
+                :type "float")
+                nil [1131 1217])
+            ("SIGN" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1251 1262])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1263 1274]))                  
+                :typemodifiers ("inline"))
+                nil [1219 1335])
+            ("SIGN" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1355 1370])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1371 1387]))                  
+                :type "float")
+                nil [1337 1448])
+            ("SIGN" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1468 1484])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1485 1500]))                  
+                :type "float")
+                nil [1450 1570])
+            ("SWAP" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1607 1612])
+                    ("b" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1613 1618]))                  
+                :typemodifiers ("inline"))
+                nil [1572 1655])
+            ("RANI" variable (:constant-flag t) nil [1665 1669])
+            ("SRAND" variable (:constant-flag t) nil [1712 1717])
+            ("LOG" variable (:constant-flag t) nil [1746 1749])
+            ("SQRT" variable (:constant-flag t) nil [1768 1772])
+            ("EXP" variable (:constant-flag t) nil [1792 1795])
+            ("POW" variable (:constant-flag t) nil [1814 1817])
+            ("takeSamp" variable (:constant-flag t) nil [1862 1870])
+            ("getLines" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1949 1961]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [1929 2146])
+            ("saveData" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2168 2180])
+                    ("m_data" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2181 2194]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [2148 2589])
+            ("loadLocalData" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2617 2629])
+                    ("m_data" variable
+                       (:reference 1
+                        :type ("MatrixXd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2630 2647])
+                    ("blocksize" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2662])
+                    ("ss" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2663 2670])
+                    ("blocks" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2671 2682]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [2592 3434])
+            ("loadLocalData" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3463 3475])
+                    ("m_data" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3476 3490])
+                    ("blocksize" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3491 3505])
+                    ("ss" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3506 3513])
+                    ("blocks" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3514 3525]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [3438 4296])
+            ("loadData" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4318 4330])
+                    ("m_data" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4331 4345]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [4298 4830])
+            ("loadData" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4852 4864])
+                    ("m_data" variable
+                       (:reference 1
+                        :type ("MatrixXd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4865 4882]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [4832 5366])
+            ("saveHyper" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5390 5402])
+                    ("h" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5403 5411])
+                    ("d" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5412 5418]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [5369 5977])
+            ("pmsg" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [6086 6096])
+                    ("outfp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6097 6109])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6110 6129])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [6130 6134]))                  
+                :type "void")
+                nil [6069 6265])
+            ("pcp" variable (:constant-flag t) nil [6379 6382])
+            ("pcpst" variable (:constant-flag t) nil [6436 6441])
+            ("pcpen" variable (:constant-flag t) nil [6492 6497])
+            ("pcp_s" variable (:constant-flag t) nil [6547 6552])
+            ("pvec" variable (:constant-flag t) nil [6616 6620])
+            ("pvec_r" variable (:constant-flag t) nil [6776 6782])
+            ("pvec_s" variable (:constant-flag t) nil [6940 6946])
+            ("pmat_r" variable (:constant-flag t) nil [7144 7150])
+            ("pmat_pos" variable (:constant-flag t) nil [7373 7381])
+            ("pmat" variable (:constant-flag t) nil [7658 7662])
+            ("pmat_s" variable (:constant-flag t) nil [7900 7906])
+            ("throw" variable (:constant-flag t) nil [8421 8426])
+            ("bubble_sort" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8934 8942])
+                    ("ai" variable
+                       (:reference 1
+                        :type ("Vint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8943 8952]))                  
+                :type "void")
+                nil [8910 9254])
+            ("argmaxi" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("v" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9292 9300]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [9273 9666])
+            ("getRmse" function
+               (:arguments 
+                  ( ("v1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("VectorXd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9726 9745])
+                    ("v2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("VectorXd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9746 9765]))                  
+                :type "double")
+                nil [9711 9821])
+            ("getMnlp" function
+               (:arguments 
+                  ( ("v1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("VectorXd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9888 9907])
+                    ("v2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("VectorXd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9908 9927])
+                    ("v3" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("VectorXd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9928 9947]))                  
+                :type "double")
+                nil [9873 10127])
+            ("getRmse" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("v1" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10193 10202])
+                    ("v2" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10203 10212]))                  
+                :type ("Doub" type (:type "class") nil nil))
+                nil [10173 10464])
+            ("getMnlp" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("v1" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10536 10545])
+                    ("v2" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10546 10555])
+                    ("v3" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10556 10565]))                  
+                :type ("Doub" type (:type "class") nil nil))
+                nil [10516 10852])
+            ("A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10949 10957])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10958 10976])
+                    ("C" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10977 10985])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10986 10995]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [10929 11224])
+            ("A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11321 11329])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11330 11348])
+                    ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11349 11357])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11358 11367]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [11301 11763])
+            ("A_invB_transC" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11867 11875])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11876 11894])
+                    ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11895 11903])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11904 11913]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [11842 12309])
+            ("A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12389 12397])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12398 12416])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Mdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12417 12426]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [12369 12965])
+            ("trace_A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13074 13082])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13083 13101])
+                    ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13102 13110])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13111 13120]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [13048 13489])
+            ("trace_A_invB_C" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13581 13589])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13590 13608])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13609 13618]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [13555 13954])
+            ("trace_A_invB_transC" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("A" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14070 14078])
+                    ("chol_b" variable
+                       (:pointer 1
+                        :type ("pgpr_chol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14079 14097])
+                    ("C" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14098 14106])
+                    ("D" variable
+                       (:reference 1
+                        :type ("Vdoub" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14107 14116]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [14039 14559])
+            ("pgpr_timer" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [14739 14747])
+                    ("st" variable (:type ("timespec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14750 14762])
+                    ("en" variable (:type ("timespec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14765 14777])
+                    ("elapsed" variable (:type ("Doub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14780 14793])
+                    ("public" label nil (reparse-symbol classsubparts) [14794 14801])
+                    ("pgpr_timer" function
+                       (:constructor-flag t
+                        :type ("pgpr_timer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14827 14862])
+                    ("start" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [14891 15310])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type ("Doub" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15404 15877]))                  
+                :type "class")
+                nil [14720 15880]))          
+      :file "pgpr_util.h"
+      :pointmax 15889
+      :fsize 15888
+      :lastmodtime '(21665 28844 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_PGPR_UTIL_H_")
+          ("pcp" (spp-arg-list ("x") 6382 . 6385) . ((symbol "pmsg" 6386 . 6390) (semantic-list "(LEV_DBG,stdout,\"CheckPoint> %d\\n\",x)" 6390 . 6427)))
+          ("LEV_ALL" . ((number "10" 556 . 558)))
+          ("pmat_r" (spp-arg-list ("mat" "_r") 7150 . 7158) . 
+              ((FOR "for" 7164 . 7167) (semantic-list "(Int _i=0; _i<_r; _i++)" 7167 . 7190) (semantic-list "{\\
+        for(Int _j=0; _j<_r; _j++)\\
+        {\\
+            pmsg(LEV_DBG,stdout,\"%.4f \",(double)mat[_i][_j]);\\
+        }\\
+        pmsg(LEV_DBG,stdout,\"\\n\");\\
+    }" 7196 . 7361)))
+          ("EXP" (spp-arg-list ("x") 1795 . 1798) . ((symbol "exp" 1799 . 1802) (semantic-list "(x)" 1802 . 1805)))
+          ("pvec" (spp-arg-list ("vec") 6620 . 6625) . 
+              ((FOR "for" 6631 . 6634) (semantic-list "(Int _j=0; _j<vec.size(); _j++)" 6634 . 6665) (semantic-list "{\\
+        pmsg(LEV_DBG,stdout,\"%.4f \",(double)vec[_j]);\\
+    }" 6671 . 6734) (symbol "pmsg" 6740 . 6744) (semantic-list "(LEV_DBG,stdout,\"\\n\")" 6744 . 6765) (punctuation ";" 6765 . 6766)))
+          ("pmat_s" (spp-arg-list ("_s" "mat") 7906 . 7914) . 
+              ((symbol "pmsg" 7920 . 7924) (semantic-list "(LEV_DBG,stdout,\"%s:\\n\",_s)" 7924 . 7951) (punctuation ";" 7951 . 7952) (FOR "for" 7958 . 7961) (semantic-list "(Int _i=0; _i<mat.nrows(); _i++)" 7961 . 7993) (semantic-list "{\\
+        for(Int _j=0; _j<mat.ncols(); _j++)\\
+        {\\
+            pmsg(LEV_DBG,stdout,\"%.4f \",(double)mat[_i][_j]);\\
+        }\\
+        pmsg(LEV_DBG,stdout,\"\\n\");\\
+    }" 7999 . 8173)))
+          ("LOG" (spp-arg-list ("x") 1749 . 1752) . ((symbol "log" 1753 . 1756) (semantic-list "(x)" 1756 . 1759)))
+          ("POW" (spp-arg-list ("x" "y") 1817 . 1822) . 
+              ((semantic-list "(Int)" 1823 . 1828) (symbol "pow" 1828 . 1831) (semantic-list "((Doub)(x),(Doub)(y))" 1831 . 1852)))
+          ("pmat" (spp-arg-list ("mat") 7662 . 7667) . 
+              ((FOR "for" 7673 . 7676) (semantic-list "(Int _i=0; _i<mat.nrows(); _i++)" 7676 . 7708) (semantic-list "{\\
+        for(Int _j=0; _j<mat.ncols(); _j++)\\
+        {\\
+            pmsg(LEV_DBG,stdout,\"%.4f \",(double)mat[_i][_j]);\\
+        }\\
+        pmsg(LEV_DBG,stdout,\"\\n\");\\
+    }" 7714 . 7888)))
+          ("CURLEV" . ((symbol "LEV_PRG" 574 . 581)))
+          ("pcpst" (spp-arg-list ("x") 6441 . 6444) . ((symbol "pmsg" 6445 . 6449) (semantic-list "(LEV_DBG,stdout,\"[%d] start>\\n\",x)" 6449 . 6483)))
+          ("pmat_pos" (spp-arg-list ("mat") 7381 . 7386) . 
+              ((FOR "for" 7392 . 7395) (semantic-list "(Int _i=0; _i<mat.nrows(); _i++)" 7395 . 7427) (semantic-list "{\\
+        for(Int _j=0; _j<mat.ncols(); _j++)\\
+        {\\
+            if(mat[_i][_j]<0) break;\\
+            pmsg(LEV_DBG,stdout,\"%.4f \",(double)mat[_i][_j]);\\
+        }\\
+        pmsg(LEV_DBG,stdout,\"\\n\");\\
+    }" 7433 . 7645)))
+          ("throw" (spp-arg-list ("message") 8426 . 8435) . ((semantic-list "{printf(\"ERROR: %s\\n     in file %s at line %d\\n\", message,__FILE__,__LINE__); throw(1);}" 8438 . 8527)))
+          ("LEV_PRG" . ((number "0" 520 . 521)))
+          ("LEV_DBG" . ((number "5" 538 . 539)))
+          ("SRAND" (spp-arg-list ("x") 1717 . 1720) . 
+              ((symbol "srand" 1721 . 1726) (semantic-list "(x)" 1726 . 1729) (punctuation ";" 1729 . 1730) (symbol "rand" 1731 . 1735) (semantic-list "()" 1735 . 1737)))
+          ("pcpen" (spp-arg-list ("x") 6497 . 6500) . ((symbol "pmsg" 6501 . 6505) (semantic-list "(LEV_DBG,stdout,\"[%d] end# \\n\",x)" 6505 . 6538)))
+          ("pcp_s" (spp-arg-list ("s" "x") 6552 . 6557) . ((symbol "pmsg" 6558 . 6562) (semantic-list "(LEV_DBG,stdout,\" %s > %.4lf\\n\",s,(double)x)" 6562 . 6606)))
+          ("pvec_r" (spp-arg-list ("vec" "vsize") 6782 . 6793) . 
+              ((FOR "for" 6799 . 6802) (semantic-list "(Int _j=0; _j<vsize; _j++)" 6802 . 6828) (semantic-list "{\\
+        pmsg(LEV_DBG,stdout,\"%.4f \",(double)vec[_j]);\\
+    }" 6834 . 6897) (symbol "pmsg" 6903 . 6907) (semantic-list "(LEV_DBG,stdout,\"\\n\")" 6907 . 6928) (punctuation ";" 6928 . 6929)))
+          ("SQRT" (spp-arg-list ("x") 1772 . 1775) . ((symbol "sqrt" 1776 . 1780) (semantic-list "(x)" 1780 . 1783)))
+          ("pvec_s" (spp-arg-list ("_s" "vec") 6946 . 6954) . 
+              ((symbol "pmsg" 6960 . 6964) (semantic-list "(LEV_DBG,stdout,\"%s:\\n\",_s)" 6964 . 6991) (punctuation ";" 6991 . 6992) (FOR "for" 6998 . 7001) (semantic-list "(Int _j=0; _j<vec.size(); _j++)" 7001 . 7032) (semantic-list "{\\
+        pmsg(LEV_DBG,stdout,\"%.4f \",(double)vec[_j]);\\
+    }" 7038 . 7101) (symbol "pmsg" 7107 . 7111) (semantic-list "(LEV_DBG,stdout,\"\\n\")" 7111 . 7132) (punctuation ";" 7132 . 7133)))
+          ("RANI" (spp-arg-list ("x") 1669 . 1672) . ((semantic-list "(Int)" 1673 . 1678) (semantic-list "((Doub)rand()/RAND_MAX*x)" 1678 . 1703)))
+          ("takeSamp" (spp-arg-list ("a" "b" "d") 1870 . 1877) . 
+              ((FOR "for" 1878 . 1881) (semantic-list "(int _i=0; _i<d; _i++)" 1881 . 1903) (symbol "b" 1904 . 1905) (semantic-list "[_i]" 1905 . 1909) (punctuation "=" 1909 . 1910) (symbol "a" 1910 . 1911) (semantic-list "[_i]" 1911 . 1915)))
+          )
+)
+    (semanticdb-table "pgpr_parse.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_PGPR_PARSE_H_" variable (:constant-flag t) nil [628 642])
+            ("pgpr_type.h" include nil nil [643 665])
+            ("pgpr_util.h" include nil nil [666 688])
+            ("DOM" variable (:constant-flag t) nil [697 700])
+            ("INP" variable (:constant-flag t) nil [727 730])
+            ("OUT" variable (:constant-flag t) nil [761 764])
+            ("MNE" variable (:constant-flag t) nil [796 799])
+            ("HYP" variable (:constant-flag t) nil [845 848])
+            ("PARANUM" variable (:constant-flag t) nil [879 886])
+            ("NAMELEN" variable (:constant-flag t) nil [944 951])
+            ("CFGDEMO" variable (:constant-flag t) nil [989 996])
+            ("CFGPREP" variable (:constant-flag t) nil [1037 1044])
+            ("t_command_prep" type
+               (:members 
+                  ( ("mode" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1287 1296])
+                    ("seed" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1319 1328])
+                    ("mach_num" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1363 1376])
+                    ("blk_size" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1420 1433])
+                    ("trainf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1479 1500])
+                    ("percent" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1553 1565])
+                    ("testf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1605 1625])
+                    ("hyperf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1669 1690])
+                    ("support" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1718 1730])
+                    ("supportf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1804 1827]))                  
+                :type "struct")
+                nil [1229 1830])
+            ("t_command_demo" type
+               (:members 
+                  ( ("mode" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2034 2043])
+                    ("blocks" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2111 2122])
+                    ("rank" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2180 2189])
+                    ("bandwidth" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2230 2244])
+                    ("outf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2280 2299])
+                    ("trainf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2343 2364])
+                    ("testf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2402 2422])
+                    ("hyperf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2466 2487])
+                    ("supportf" variable
+                       (:dereference 1
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2558 2581]))                  
+                :type "struct")
+                nil [1979 2585])
+            ("pgpr_parse" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2746 2753])
+                    ("v_param" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2803 2817])
+                    ("v_hyp" variable (:type ("Vdoub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2872 2884])
+                    ("m_xyz" variable (:type ("Mdoub" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3037 3049])
+                    ("in_dim" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3078 3089])
+                    ("out_dim" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3118 3130])
+                    ("m_connect" variable (:type ("Mint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3283 3299])
+                    ("param_demo" variable (:type ("t_command_demo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3372 3398])
+                    ("param_prep" variable (:type ("t_command_prep" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3504 3530])
+                    ("pgpr_parse" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("md" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3806 3813])
+                            ("argc" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3814 3823])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3824 3838]))                          
+                        :type ("pgpr_parse" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3795 4077])
+                    ("private" label nil (reparse-symbol classsubparts) [4079 4087])
+                    ("parse_domfile" function
+                       (:arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4206 4218]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4187 4954])
+                    ("parse_cfgfile" function
+                       (:arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5109 5121]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5090 5975])
+                    ("parse_commandline_prep" function
+                       (:arguments 
+                          ( ("argc" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6189 6198])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6199 6213]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6162 8528])
+                    ("parse_commandline_demo" function
+                       (:arguments 
+                          ( ("argc" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8759 8768])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8769 8783]))                          
+                        :type ("Int" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8732 10316]))                  
+                :type "class")
+                nil [2727 10321]))          
+      :file "pgpr_parse.h"
+      :pointmax 10329
+      :fsize 10328
+      :lastmodtime '(21654 37896 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CFGPREP" . ((number "2" 1045 . 1046)))
+          ("_PGPR_PARSE_H_")
+          ("DOM" . ((number "0" 701 . 702)))
+          ("HYP" . ((number "4" 849 . 850)))
+          ("MNE" . ((number "3" 800 . 801)))
+          ("PARANUM" . ((number "5" 887 . 888)))
+          ("NAMELEN" . ((number "128" 952 . 955)))
+          ("INP" . ((number "1" 731 . 732)))
+          ("OUT" . ((number "2" 765 . 766)))
+          ("CFGDEMO" . ((number "1" 997 . 998)))
+          )
+)
+    (semanticdb-table "pgpr_fgp.h"
+      :file "pgpr_fgp.h"
+      :fsize 2922
+      :lastmodtime '(21654 37896 0 0)))
+  :file "!Users!alfred!Documents!repo!lma_v1.0!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,25 @@
+;; Object ex-mix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ex-mix/"
+  :tables
+  (list
+    (semanticdb-table "rgen.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [76 94])
+            ("math.h" include (:system-flag t) nil [95 112])
+            ("rand.h" include nil nil [114 131])
+            ("N_cases" variable (:constant-flag t) nil [141 148])
+            ("main" function (:type "int") nil [155 622]))          
+      :file "rgen.c"
+      :pointmax 623
+      :fsize 622
+      :lastmodtime '(13717 5140 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("N_cases" . ((number "1000" 149 . 153)))
+          )
+))
+  :file "!Users!alfred!Documents!repo!fbm.1999-03-13!ex-mix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

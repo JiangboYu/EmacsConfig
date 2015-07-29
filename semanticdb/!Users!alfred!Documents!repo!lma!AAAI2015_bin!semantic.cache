@@ -1,0 +1,48 @@
+;; Object AAAI2015_bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AAAI2015_bin/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("HOME" variable (:default-value ("..")) nil [1 11])
+            ("DEMO_DIR" variable (:default-value ("$(HOME)/demo")) nil [11 35])
+            ("SRC_DIR" variable (:default-value ("$(HOME)/src")) nil [35 57])
+            ("LIB_DIR" variable (:default-value ("$(HOME)/lib")) nil [57 79])
+            ("PSVM_DIR" variable (:default-value ("$(SRC_DIR)/psvm")) nil [79 104])
+            ("LIBS" variable (:default-value ("-lpthread")) nil [104 122])
+            ("INCS" variable (:default-value ("-I$(SRC_DIR)" "-I$(PSVM_DIR)")) nil [122 156])
+            ("CC" variable (:default-value ("$(HOME)/mpi/bin/mpicxx")) nil [169 197])
+            ("CFLAGS" variable (:default-value ("-O3" "-D__x86_64__")) nil [197 223])
+            ("LDFLAGS" variable (:default-value ("-O3")) nil [259 278])
+            ("SOURCES" variable (:default-value ("$(wildcard $(SRC_DIR)/*.cc)" "$(wildcard $(PSVM_DIR)/*.cc)")) nil [279 346])
+            ("OBJS" variable (:default-value ("$(patsubst %.cc, %.o, $(SOURCES))")) nil [346 388])
+            (".cc.o" function nil nil [389 425])
+            ("deps" function nil nil [426 470])
+            (".PHONY" function (:arguments ("all" "clean" "deps" "release" "debug" "echo" "doc")) nil [471 517])
+            ("all" function (:arguments ("fgp" "prep" "pic" "pitc" "ppitc" "ppic" "picf" "slma" "plma" "ssgp")) nil [518 572])
+            ("prep" function (:arguments ("deps" "$(OBJS)")) nil [573 678])
+            ("fgp" function (:arguments ("deps" "$(OBJS)")) nil [678 781])
+            ("pic" function (:arguments ("deps" "$(OBJS)")) nil [781 884])
+            ("pitc" function (:arguments ("deps" "$(OBJS)")) nil [884 989])
+            ("ppic" function (:arguments ("deps" "$(OBJS)")) nil [989 1094])
+            ("ppitc" function (:arguments ("deps" "$(OBJS)")) nil [1094 1201])
+            ("picf" function (:arguments ("deps" "$(OBJS)")) nil [1201 1306])
+            ("pbb" function (:arguments ("deps" "$(OBJS)")) nil [1306 1412])
+            ("slma" function (:arguments ("deps" "$(OBJS)")) nil [1412 1528])
+            ("plma" function (:arguments ("deps" "$(OBJS)")) nil [1528 1644])
+            ("ssgp" function (:arguments ("deps" "$(OBJS)")) nil [1644 1752])
+            ("echo" function nil nil [1752 1896])
+            ("clean" function nil nil [1897 2044])
+            ("clog" function nil nil [2044 2070])
+            ("sty" function nil nil [2070 2192])
+            ("doc" function nil nil [2192 2265]))          
+      :file "Makefile"
+      :pointmax 2265
+      :fsize 2264
+      :lastmodtime '(21601 39562 0 0)
+      :unmatched-syntax '((thing 2238 . 2238) (thing 2239 . 2264))))
+  :file "!Users!alfred!Documents!repo!lma!AAAI2015_bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

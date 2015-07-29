@@ -1,0 +1,27 @@
+;; Object leetcode/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "leetcode/"
+  :tables
+  (list
+    (semanticdb-table "leetcodeSolution.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("Solution" type
+               (:members 
+                  ( ("maxProduct" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [334 338])
+                            ("nums" variable nil (reparse-symbol function_parameters) [340 344]))                          )
+                        (reparse-symbol indented_block_body) [319 910]))                  
+                :type "class")
+                nil [1 701])
+            ("if" code nil nil [1793 1878]))          
+      :file "leetcodeSolution.py"
+      :pointmax 1927
+      :fsize 1926
+      :lastmodtime '(21919 49052 0 0)
+      :unmatched-syntax '((thing 883 . 910) (thing 883 . 910) (thing 919 . 1793))))
+  :file "!Users!alfred!Documents!repo!github!leetcode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

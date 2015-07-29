@@ -1,0 +1,22 @@
+;; Object GP_py/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "GP_py/"
+  :tables
+  (list
+    (semanticdb-table "setup.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [48 57])
+            ("setuptools" include nil nil [58 86])
+            ("version" variable nil nil [105 122])
+            ("read" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [133 138]))              ) nil [124 212])
+            ("setup" code nil nil [213 2183]))          
+      :file "setup.py"
+      :pointmax 2184
+      :fsize 2183
+      :lastmodtime '(21798 28545 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!alfred!Documents!repo!GP_py!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

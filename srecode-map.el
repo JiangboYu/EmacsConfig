@@ -1,0 +1,6 @@
+;; Object SRecode Map
+;; EIEIO PERSISTENT OBJECT
+(srecode-map "SRecode Map"
+  :file "srecode-map.el"
+  :files '(("/opt/local/share/emacs/24.4/etc/srecode/wisent.srt" . wisent-grammar-mode) ("/opt/local/share/emacs/24.4/etc/srecode/texi.srt" . texinfo-mode) ("/opt/local/share/emacs/24.4/etc/srecode/template.srt" . srecode-template-mode) ("/opt/local/share/emacs/24.4/etc/srecode/make.srt" . makefile-mode) ("/opt/local/share/emacs/24.4/etc/srecode/java.srt" . java-mode) ("/opt/local/share/emacs/24.4/etc/srecode/el.srt" . emacs-lisp-mode) ("/opt/local/share/emacs/24.4/etc/srecode/default.srt" . default) ("/opt/local/share/emacs/24.4/etc/srecode/cpp.srt" . c++-mode) ("/opt/local/share/emacs/24.4/etc/srecode/c.srt" . c-mode))
+  :apps '((tests ("/opt/local/share/emacs/24.4/etc/srecode/test.srt" . srecode-template-mode)) (getset ("/opt/local/share/emacs/24.4/etc/srecode/getset-cpp.srt" . c++-mode)) (ede ("/opt/local/share/emacs/24.4/etc/srecode/ede-make.srt" . makefile-mode) ("/opt/local/share/emacs/24.4/etc/srecode/ede-autoconf.srt" . autoconf-mode)) (document ("/opt/local/share/emacs/24.4/etc/srecode/doc-java.srt" . java-mode) ("/opt/local/share/emacs/24.4/etc/srecode/doc-default.srt" . default) ("/opt/local/share/emacs/24.4/etc/srecode/doc-cpp.srt" . c++-mode))))

@@ -1,0 +1,104 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables
+  (list
+    (semanticdb-table "demo_prep.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("pgpr_util.h" include nil nil [1 23])
+            ("pgpr_parse.h" include nil nil [24 47])
+            ("pgpr_data.h" include nil nil [48 70])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [81 90])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91 105]))                  
+                :type "int")
+                nil [72 1439]))          
+      :file "demo_prep.cc"
+      :pointmax 1440
+      :fsize 1439
+      :lastmodtime '(21654 37896 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "prep.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [1 16])
+            ("random" include nil nil [17 30])
+            ("math" include nil nil [31 42])
+            ("GPR" type
+               (:members 
+                  ( ("fitc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [69 73]))                          )
+                        (reparse-symbol indented_block_body) [60 93]))                  
+                :type "class")
+                nil [45 93])
+            ("data" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [161 186])
+                            ("self" variable nil (reparse-symbol indented_block_body) [195 224])
+                            ("self" variable nil (reparse-symbol indented_block_body) [233 262])
+                            ("self" code nil (reparse-symbol indented_block_body) [271 287])
+                            ("self" variable nil (reparse-symbol indented_block_body) [296 360])
+                            ("self" variable nil (reparse-symbol indented_block_body) [369 456]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [146 150]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [133 457])
+                    ("readHyper" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [484 488]))                          )
+                        (reparse-symbol indented_block_body) [470 1393])
+                    ("parse_args" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1429 1433]))                          )
+                        (reparse-symbol indented_block_body) [1414 2820])
+                    ("getTrainData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2846 2850]))                          )
+                        (reparse-symbol indented_block_body) [2829 3267])
+                    ("getTestData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3313 3317]))                          )
+                        (reparse-symbol indented_block_body) [3297 3524])
+                    ("getSupport" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3552 3556]))                          )
+                        (reparse-symbol indented_block_body) [3537 3778])
+                    ("getHyper" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3804 3808]))                          )
+                        (reparse-symbol indented_block_body) [3791 4053])
+                    ("writeData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4080 4084])
+                            ("filename" variable nil (reparse-symbol function_parameters) [4086 4094])
+                            ("data" variable nil (reparse-symbol function_parameters) [4096 4100]))                          )
+                        (reparse-symbol indented_block_body) [4066 4266]))                  
+                :type "class")
+                nil [111 4266])
+            ("if" code nil nil [4272 4434]))          
+      :file "prep.py"
+      :pointmax 4434
+      :fsize 4433
+      :lastmodtime '(21897 15048 0 0)
+      :unmatched-syntax '((thing 4321 . 4325) (thing 4321 . 4325) (thing 4321 . 4326) (thing 4321 . 4326) (thing 4326 . 4327) (thing 4326 . 4327) (thing 4332 . 4333) (thing 4332 . 4333))))
+  :file "!Users!alfred!Documents!repo!lma_v1.0!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
